@@ -1,0 +1,4 @@
+.env
+data/gtfs/
+data/srt/
+*.zip

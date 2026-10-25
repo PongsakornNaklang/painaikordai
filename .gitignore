@@ -4,3 +4,4 @@ data/gtfs/
 data/srt/
 *.zip
 .DS_Store
+.vercel
