@@ -80,8 +80,18 @@ for (const [key, trips] of Object.entries(groups)) {
     t.push(r1(t[i - 1] + dt));
   });
   const h = median(trips.flatMap(x => hw[x.trip_id] || [])) ?? { metro: 8, bus: 15, van: 20, boat: 20 }[m];
-  const [th] = rt.route_long_name.split(';');
-  pats.push({ m, n: (rt.route_short_name ? rt.route_short_name + ' ' : '') + th, e: m === 'metro' ? 0 : 1, h: r1(h), s, t });
+  const [th] = rt.route_long_name.split(';'), sn = rt.route_short_name, color = th.match(/สี[^\s)\]]+/)?.[0];
+  const clean = x => x.replace(/\s*[([].*?[)\]]/g, '').trim();
+  // Short, readable line names: "BTS สายสุขุมวิท", "MRT สายสีน้ำเงิน", "รถเมล์สาย 138"
+  const [n, chip] = rt.agency_id === 'BTSC' ? ['BTS ' + clean(th), 'BTS']
+    : ['BEM', 'MRTA'].includes(rt.agency_id) ? ['MRT สาย' + color, 'MRT']
+    : sn === 'ARL' ? ['Airport Rail Link', 'ARL']
+    : rt.agency_id === 'SRTET' ? ['รถไฟฟ้า' + th, 'สายสีแดง']
+    : m === 'boat' ? [clean(th), 'เรือ']
+    : m === 'van' ? ['รถตู้ ' + (sn || clean(th)), 'รถตู้']
+    : [sn ? 'รถเมล์สาย ' + sn : clean(th), sn || 'รถเมล์'];
+  const hs = clean((trip.trip_headsign || '').split(';')[0].replace(/^(BTS|MRT)\s*/, ''));
+  pats.push({ m, n, sn: chip, hs, c: m === 'metro' && rt.route_color ? '#' + rt.route_color : undefined, e: m === 'metro' ? 0 : 1, h: r1(h), s, t });
 }
 console.log('gtfs', nodes.length, 'stops', pats.length, 'patterns');
 
@@ -124,13 +134,35 @@ for (const [no, seq] of seqs) {
   const ok = seq.filter(x => where[x.name] || !missing.add(x.name));
   if (ok.length < 2) continue;
   const d0 = ok[0].time;
-  pats.push({ m: 'train', n: `ขบวน ${no} ไป${where[ok.at(-1).name].th}`, e: 0, h: 0, s: ok.map(x => rn(where[x.name])), t: ok.map(x => r1(x.time - d0)), d0: r1(d0 % 1440) });
+  pats.push({ m: 'train', n: `รถไฟขบวน ${no}`, sn: 'รถไฟ', hs: where[ok.at(-1).name].th, e: 0, h: 0, s: ok.map(x => rn(where[x.name])), t: ok.map(x => r1(x.time - d0)), d0: r1(d0 % 1440) });
 }
 console.log('srt', Object.keys(trains).length, 'trains,', railNode.size, 'stations; unmatched', missing.size, [...missing].slice(0, 15).join(', '));
 
 // --- 3. Intercity bus + ferry (Zenodo) ---
+// Source names are English only; give the common ones (provinces, big terminals, towns) a Thai name.
+const TH = {
+  'Amnat Charoen': 'อำนาจเจริญ', Bangkok: 'กรุงเทพฯ', 'Bueng Kan': 'บึงกาฬ', 'Buri Ram': 'บุรีรัมย์', Buriram: 'บุรีรัมย์', Chachoengsao: 'ฉะเชิงเทรา',
+  'Chai Nat': 'ชัยนาท', Chaiyaphum: 'ชัยภูมิ', Chanthaburi: 'จันทบุรี', 'Chiang Mai': 'เชียงใหม่', 'Chiang Rai': 'เชียงราย', 'Chon Buri': 'ชลบุรี',
+  Chonburi: 'ชลบุรี', Chumphon: 'ชุมพร', Kalasin: 'กาฬสินธุ์', 'Kamphaeng Phet': 'กำแพงเพชร', Kanchanaburi: 'กาญจนบุรี', 'Khon Kaen': 'ขอนแก่น',
+  Krabi: 'กระบี่', Lampang: 'ลำปาง', Lamphun: 'ลำพูน', Loei: 'เลย', 'Lop Buri': 'ลพบุรี', Lopburi: 'ลพบุรี', 'Mae Hong Son': 'แม่ฮ่องสอน',
+  'Maha Sarakham': 'มหาสารคาม', Mukdahan: 'มุกดาหาร', 'Nakhon Nayok': 'นครนายก', 'Nakhon Pathom': 'นครปฐม', 'Nakhon Phanom': 'นครพนม',
+  'Nakhon Ratchasima': 'นครราชสีมา', Korat: 'โคราช', 'Nakhon Sawan': 'นครสวรรค์', 'Nakhon Si Thammarat': 'นครศรีธรรมราช', Nan: 'น่าน',
+  Narathiwat: 'นราธิวาส', 'Nong Bua Lam Phu': 'หนองบัวลำภู', 'Nong Khai': 'หนองคาย', Nonthaburi: 'นนทบุรี', 'Pathum Thani': 'ปทุมธานี',
+  Pattani: 'ปัตตานี', Phangnga: 'พังงา', 'Phang Nga': 'พังงา', Phatthalung: 'พัทลุง', Phayao: 'พะเยา', Phetchabun: 'เพชรบูรณ์', Phetchaburi: 'เพชรบุรี',
+  Phichit: 'พิจิตร', Phitsanulok: 'พิษณุโลก', 'Phra Nakhon Si Ayutthaya': 'พระนครศรีอยุธยา', Ayutthaya: 'อยุธยา', Phrae: 'แพร่', Phuket: 'ภูเก็ต',
+  'Prachin Buri': 'ปราจีนบุรี', 'Prachuap Khiri Khan': 'ประจวบคีรีขันธ์', Ranong: 'ระนอง', Ratchaburi: 'ราชบุรี', Rayong: 'ระยอง', 'Roi Et': 'ร้อยเอ็ด',
+  'Sa Kaeo': 'สระแก้ว', 'Sakon Nakhon': 'สกลนคร', 'Samut Prakan': 'สมุทรปราการ', 'Samut Sakhon': 'สมุทรสาคร', 'Samut Songkhram': 'สมุทรสงคราม',
+  Saraburi: 'สระบุรี', Satun: 'สตูล', 'Si Sa Ket': 'ศรีสะเกษ', 'Sing Buri': 'สิงห์บุรี', Sukhothai: 'สุโขทัย', 'Suphan Buri': 'สุพรรณบุรี',
+  'Surat Thani': 'สุราษฎร์ธานี', Surin: 'สุรินทร์', Tak: 'ตาก', Trang: 'ตรัง', Trat: 'ตราด', 'Ubon Ratchathani': 'อุบลราชธานี', 'Udon Thani': 'อุดรธานี',
+  'Uthai Thani': 'อุทัยธานี', Uttaradit: 'อุตรดิตถ์', Yala: 'ยะลา', Yasothon: 'ยโสธร',
+  'Mo Chit 2': 'หมอชิต 2', Chatuchak: 'หมอชิต 2 (จตุจักร)', 'Chatuchak Coach Station (Mo Chit 2)': 'หมอชิต 2', 'Mini Bus Terminal (Chatuchak)': 'ท่ารถตู้ จตุจักร',
+  'Sai Tai Mai': 'สายใต้ใหม่', 'Southern Bangkok Bus Terminal (Sai Tai Mai)': 'สายใต้ใหม่', Ekkamai: 'เอกมัย', Rangsit: 'รังสิต', 'Hat Yai': 'หาดใหญ่',
+  'Koh Samui': 'เกาะสมุย', 'Koh Kood': 'เกาะกูด', 'Koh Mak': 'เกาะหมาก', 'Koh Lanta': 'เกาะลันตา', 'Koh Phangan': 'เกาะพะงัน', 'Koh Tao': 'เกาะเต่า',
+  'Koh Chang': 'เกาะช้าง', 'Koh Phi Phi': 'เกาะพีพี', 'Ao Nang': 'อ่าวนาง', Pattaya: 'พัทยา', 'Hua Hin': 'หัวหิน', Pranburi: 'ปราณบุรี', Pai: 'ปาย',
+};
+const thName = en => { const d = en.replace(/ District$/, ''); return TH[en] ? `${TH[en]};${en}` : TH[d] ? `อ.${TH[d]};${en}` : en; };
 const term = new Map();
-const tn = (mode, name, lat, lon) => { const k = mode + name + lat + lon; return term.get(k) ?? term.set(k, add(name, lat, lon, mode === 'boat' ? 'f' : 'b')).get(k); };
+const tn = (mode, name, lat, lon) => { const k = mode + name + lat + lon; return term.get(k) ?? term.set(k, add(thName(name), lat, lon, mode === 'boat' ? 'f' : 'b')).get(k); };
 const dur = s => { const h = s.match(/(\d+)\s*h/), m = s.match(/(\d+)\s*m/); return h || m ? (+(h?.[1] || 0)) * 60 + +(m?.[1] || 0) : null; };
 for (const [file, m, v] of [['bus_traffic.csv', 'coach', 71], ['ferry_traffic.csv', 'ferry', 46]]) for (const r of csv(D + file)) {
   const a = tn(m === 'ferry' ? 'boat' : 'bus', r.Departure, r['Departure Latitude'], r['Departure Longitude']);
@@ -140,7 +172,7 @@ for (const [file, m, v] of [['bus_traffic.csv', 'coach', 71], ['ferry_traffic.cs
   const pub = dur(r['Est. Duration'] || ''); // published durations faster than 100 km/h are bogus
   const trips = parseFloat(r['Total Trips']) || 1;
   const fare = parseFloat((r['Cheapest Price'] || '').replace(/[^\d.]/g, '')) || undefined;
-  pats.push({ m, n: (r['List of Operators'] || '').split(',').slice(0, 2).join(', ') || r.Departure + ' – ' + r.Destination, e: 1, h: r1(1440 / trips), s: [a, b], t: [0, Math.round(pub && pub >= dist / 100 * 60 ? pub : dist / v * 60)], f: fare, k: trips });
+  pats.push({ m, n: m === 'ferry' ? 'เรือ' : 'รถทัวร์/รถตู้', sn: m === 'ferry' ? 'เรือ' : 'รถทัวร์', hs: thName(r.Destination).split(';')[0], op: (r['List of Operators'] || '').split(',').map(x => x.trim()).filter(Boolean).slice(0, 2).join(', '), e: 1, h: r1(1440 / trips), s: [a, b], t: [0, Math.round(pub && pub >= dist / 100 * 60 ? pub : dist / v * 60)], f: fare, k: trips });
 }
 console.log('intercity terminals', term.size);
 

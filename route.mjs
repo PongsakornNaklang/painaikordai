@@ -93,12 +93,12 @@ export function route(from, to, now = 0) { // now = minutes since midnight, Bang
     if (how[s] === 'board') {
       let e = k; while (how[chain[e + 1]] === 'ride') e++;
       const p = pats[patOf[s - N]], i = idxOf[s - N], j = idxOf[chain[e] - N];
-      const leg = { mode: p.m, name: p.n, est: !!p.e, from: place(p.s[i]), to: place(p.s[j]), min: p.t[j] - p.t[i], wait: clk[s] - clk[prev[s]], stops: j - i,
+      const leg = { mode: p.m, name: p.n, chip: p.sn, toward: p.hs, color: p.c, op: p.op || undefined, est: !!p.e, from: place(p.s[i]), to: place(p.s[j]), min: p.t[j] - p.t[i], wait: clk[s] - clk[prev[s]], stops: j - i,
         path: p.s.slice(i, j + 1).map(n => [nodes[n][1], nodes[n][2]]) };
       if (p.m === 'train') { leg.dep = (p.d0 + p.t[i]) % 1440; leg.arr = (p.d0 + p.t[j]) % 1440; }
       if (p.f) leg.fare = p.f;
       if (p.k) leg.perDay = p.k;
-      if (p.m !== 'train' && p.m !== 'metro') leg.headway = p.h;
+      if (p.m !== 'train') leg.headway = p.h;
       legs.push(leg);
       at = p.s[j]; k = e + 1; // skip the alight state
     } else if (typeof how[s] === 'object') {

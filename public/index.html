@@ -7,14 +7,15 @@
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.19.0/dist/tabler-icons.min.css">
 <style>
-:root{--bg:#fff;--card:#f6f5f2;--text:#1f1e1c;--muted:#6b6a65;--line:#e4e2dc;--accent:#185FA5;--real:#0F6E56;--real-bg:#E1F5EE;--est:#854F0B;--est-bg:#FAEEDA;--err:#A32D2D}
-@media (prefers-color-scheme:dark){:root{--bg:#1c1c1b;--card:#262624;--text:#eceae4;--muted:#a3a19a;--line:#3a3936;--accent:#85B7EB;--real:#9FE1CB;--real-bg:#085041;--est:#FAC775;--est-bg:#633806;--err:#F09595}}
+:root{--bg:#fff;--card:#f6f5f2;--text:#1f1e1c;--muted:#6b6a65;--line:#e4e2dc;--accent:#185FA5;--err:#A32D2D}
+@media (prefers-color-scheme:dark){:root{--bg:#1c1c1b;--card:#262624;--text:#eceae4;--muted:#a3a19a;--line:#3a3936;--accent:#85B7EB;--err:#F09595}}
 *{box-sizing:border-box}
 body{margin:0;font:15px/1.5 system-ui,-apple-system,"Noto Sans Thai",sans-serif;background:var(--bg);color:var(--text);display:flex;flex-direction:column;height:100dvh}
-#map{flex:0 0 42dvh;background:var(--card)}
+#map{flex:0 0 40dvh;background:var(--card)}
 #panel{flex:1;overflow:auto;padding:12px 16px 24px;border-top:1px solid var(--line)}
-@media (min-width:800px){body{flex-direction:row-reverse}#map{flex:1;height:100dvh}#panel{flex:0 0 400px;border:0;border-left:1px solid var(--line)}}
+@media (min-width:800px){body{flex-direction:row-reverse}#map{flex:1;height:100dvh}#panel{flex:0 0 420px;border:0;border-left:1px solid var(--line)}}
 h1{font-size:20px;font-weight:600;margin:4px 0 12px}
+b{font-weight:600}
 .row{display:flex;align-items:center;gap:8px}
 .lab{font-size:12px;color:var(--muted);margin:10px 0 4px}
 .box{padding:9px 12px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--text);font:inherit;width:100%}
@@ -23,18 +24,24 @@ h1{font-size:20px;font-weight:600;margin:4px 0 12px}
 #sugg button{display:block;width:100%;text-align:left;padding:8px 12px;border:0;border-top:1px solid var(--line);background:none;color:inherit;font:inherit;cursor:pointer}
 #sugg button:first-child{border-top:0}
 #sugg button:hover,#sugg button:focus{background:var(--card)}
-.sub{font-size:12px;color:var(--muted);margin:1px 0 0}
-.sum{background:var(--card);border-radius:10px;padding:12px;margin:12px 0 4px}
-.big{font-size:24px;font-weight:600}
-.leg{display:flex;gap:10px;padding:10px 4px;border-top:1px solid var(--line);cursor:pointer;border-radius:6px}
-.leg:hover{background:var(--card)}
-.leg.on{background:var(--card)}
-.ic{width:32px;height:32px;border-radius:50%;background:var(--card);display:flex;align-items:center;justify-content:center;flex:none;font-size:18px;color:var(--muted)}
-.leg .t{text-align:right;white-space:nowrap}
-.b{font-size:11px;padding:1px 7px;border-radius:6px;display:inline-block;margin-top:2px}
-.real{background:var(--real-bg);color:var(--real)}.est{background:var(--est-bg);color:var(--est)}
-.more{margin:8px 0 2px}
-.more img{width:100%;border-radius:8px;display:block;aspect-ratio:4/3;object-fit:cover;background:var(--card)}
+.sub{font-size:13px;color:var(--muted);margin:2px 0 0}
+.head{margin:18px 0 10px}
+.big{font-size:26px;font-weight:600;line-height:1.2}
+.chips{display:flex;flex-wrap:wrap;gap:4px;align-items:center;margin:10px 0 16px}
+.chip{display:inline-flex;align-items:center;gap:4px;font-size:13px;padding:2px 9px;border-radius:999px;background:var(--card)}
+.chip i{color:var(--c)}
+.chips .ti-chevron-right{font-size:12px;color:var(--muted)}
+.st{display:grid;grid-template-columns:52px 18px 1fr;column-gap:8px;cursor:pointer;border-radius:8px}
+.st:hover,.st.on{background:var(--card)}
+.tm{font-size:13px;color:var(--muted);text-align:right;padding-top:1px;white-space:nowrap}
+.ln{position:relative;display:flex;justify-content:center}
+.ln:before{content:"";position:absolute;top:0;bottom:0;width:4px;background:var(--c)}
+.ln.d:before{background:repeating-linear-gradient(var(--c) 0 6px,transparent 6px 11px)}
+.ln.end:before{display:none}
+.dot{position:relative;width:14px;height:14px;border-radius:50%;background:var(--bg);border:3px solid var(--c);margin-top:4px}
+.bd{padding:0 6px 16px 0;min-width:0}
+.ex{font-size:13px;color:var(--accent);margin-top:4px}
+.more img{width:100%;border-radius:8px;display:block;aspect-ratio:4/3;object-fit:cover;background:var(--card);margin-top:6px}
 .more a{color:var(--accent);font-size:13px;margin-right:12px}
 .err{color:var(--err);font-size:13px;margin-top:8px}
 .anim{transition:stroke-dashoffset .8s ease-out,opacity .3s}
@@ -53,15 +60,19 @@ h1{font-size:20px;font-weight:600;margin:4px 0 12px}
   <div id="sugg" role="listbox"></div>
   <div id="msg"></div>
   <div id="out"></div>
-  <p class="sub" style="margin-top:20px">ข้อมูล: นำทาง สนข. (GTFS), ตารางเดินรถ รฟท., Zenodo BusOnlineTicket 2024, © OpenStreetMap, ภาพ © Mapillary · CC BY / CC BY-SA</p>
+  <p class="sub" style="margin-top:20px;font-size:12px">ข้อมูล: นำทาง สนข. (GTFS), ตารางเดินรถ รฟท., Zenodo BusOnlineTicket 2024, © OpenStreetMap, ภาพ © Mapillary · CC BY / CC BY-SA</p>
 </div>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script>
 const $ = id => document.getElementById(id);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-const dur = m => (m >= 60 ? Math.floor(m / 60) + ' ชม. ' : '') + (m % 60 || m < 60 ? Math.round(m % 60) + ' นาที' : '');
+const dur = m => { m = Math.round(m); return (m >= 60 ? Math.floor(m / 60) + ' ชม. ' : '') + (m % 60 || m < 60 ? (m % 60) + ' นาที' : ''); };
 const clock = m => { m = ((Math.round(m) % 1440) + 1440) % 1440; return String(Math.floor(m / 60)).padStart(2, '0') + ':' + String(m % 60).padStart(2, '0'); };
-const MODE = { walk: ['ti-walk', 'เดิน'], metro: ['ti-train', 'รถไฟฟ้า'], train: ['ti-train', 'รถไฟ'], bus: ['ti-bus', 'รถเมล์'], coach: ['ti-bus', 'รถทัวร์/รถตู้'], van: ['ti-car', 'รถตู้'], boat: ['ti-ship', 'เรือ'], ferry: ['ti-ship', 'เรือ'], local: ['ti-car', 'สองแถว / Grab'] };
+const ICON = { walk: 'ti-walk', metro: 'ti-train', train: 'ti-train', bus: 'ti-bus', coach: 'ti-bus', van: 'ti-car', boat: 'ti-ship', ferry: 'ti-ship', local: 'ti-car' };
+const COLOR = { walk: '#888780', bus: '#D85A30', coach: '#534AB7', van: '#993556', train: '#0F6E56', boat: '#185FA5', ferry: '#185FA5', local: '#BA7517', metro: '#639922' };
+const AT = { metro: 'สถานี ', bus: 'ป้าย ', van: 'ป้าย ', boat: '', ferry: 'ท่าเรือ ', coach: 'จุดขึ้นรถ ', train: '' };
+const UNIT = { metro: 'สถานี', bus: 'ป้าย', van: 'ป้าย', boat: 'ท่า' };
+const color = l => l.color || COLOR[l.mode];
 const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 const map = L.map('map', { zoomControl: false }).setView([13.75, 100.5], 6);
@@ -105,75 +116,96 @@ async function go() {
   render(r);
 }
 
-function detail(l) {
-  if (l.mode === 'train') return `ออก ${clock(l.dep)} ถึง ${clock(l.arr)}` + (l.wait ? ` · รอ ${dur(l.wait)}` : '');
-  if (l.mode === 'metro') return `${l.stops} สถานี · รอ ~${l.wait} นาที`;
-  if (l.mode === 'coach' || l.mode === 'ferry') return `${Math.round(l.perDay)} เที่ยว/วัน · รอ ~${l.wait} นาที` + (l.fare ? ` · ฿${l.fare}` : '');
-  if (l.mode === 'local') return `${l.km} กม. · ไม่มีข้อมูลสาย คิดจากระยะทาง`;
-  if (l.mode === 'walk') return '';
-  return `${l.stops} ป้าย · มาทุก ~${Math.round(l.headway)} นาที`;
+// Turn legs into instructions: short walks fold into the next ride; each step gets a clock time.
+// Times stay exact until the first leg timed from distance/frequency (bus, coach, boat, taxi); after that they get "~".
+function steps(r) {
+  const out = [];
+  let t = r.now, approx = false, walk = null;
+  r.legs.forEach((l, i) => {
+    const next = r.legs[i + 1], toName = next ? l.to.name : dest.name;
+    if (l.mode === 'walk' && next && next.mode !== 'local' && l.min <= 10) { walk = l; t += l.min; return; }
+    if (l.mode === 'walk' || l.mode === 'local') {
+      out.push({ i, t, approx, l, icon: ICON[l.mode], dashed: true,
+        title: (l.mode === 'walk' ? 'เดินไป ' : 'นั่งสองแถว / แท็กซี่ / Grab ไป ') + `<b>${esc(toName)}</b>`,
+        lines: [`${l.mode === 'walk' ? '' : '~'}${dur(l.min)}` + (l.km ? ` · ${l.km} กม.` : ''), l.mode === 'local' ? 'ไม่มีข้อมูลสายรถ เวลาคิดจากระยะทาง' : ''] });
+      t += l.min; if (l.mode === 'local') approx = true; return;
+    }
+    const board = l.mode === 'train' ? null : t + l.wait;
+    const at = `ที่${AT[l.mode]}${esc(l.from.name)}` + (walk ? ` (เดิน ${walk.min} นาที)` : '');
+    const info = l.mode === 'train' ? [`ออก ${clock(l.dep)} ถึง ${clock(l.arr)} · ${dur(l.min)}` + (l.wait > 20 ? ` · รอขบวน ${dur(l.wait)}` : '')]
+      : l.mode === 'coach' || l.mode === 'ferry' ? [[l.op, `${Math.round(l.perDay)} เที่ยว/วัน`, `~${dur(l.min)}`, l.fare && `฿${l.fare}`].filter(Boolean).join(' · ')]
+      : [`${l.stops} ${UNIT[l.mode]} · ${l.est ? '~' : ''}${dur(l.min)} · มาทุก ~${Math.round(l.headway)} นาที`];
+    out.push({ i, t: board, exact: l.mode === 'train' ? l.dep : null, approx, l, icon: ICON[l.mode], dashed: l.est, ride: true,
+      title: `ขึ้น <b>${esc(l.name)}</b>` + (l.toward ? ` ทางไป${esc(l.toward)}` : ''),
+      lines: [`${at} → ลงที่ <b>${esc(l.to.name)}</b>`, ...info] });
+    walk = null; t += l.wait + l.min; if (l.est) approx = true;
+  });
+  return { list: out, end: t, approx };
 }
 
 function render(r) {
   layers.clearLayers();
-  const lines = r.legs.map(l => L.polyline(l.path, {
-    color: l.mode === 'walk' ? '#888780' : l.est ? '#BA7517' : '#1D9E75', weight: 5, opacity: 0.9,
-    dashArray: l.est ? '6 8' : null, className: 'anim', lineCap: 'round'
-  }).addTo(layers));
+  const lines = r.legs.map(l => L.polyline(l.path, { color: color(l), weight: 5, opacity: 0.9, dashArray: l.est ? '6 8' : null, className: 'anim', lineCap: 'round' }).addTo(layers));
   const last = r.legs.at(-1).to;
   L.circleMarker([last.lat, last.lon], { radius: 7, color: '#fff', weight: 2, fillColor: '#D85A30', fillOpacity: 1 }).addTo(layers);
-  map.flyToBounds(L.featureGroup(lines).getBounds(), { padding: [30, 30], duration: reduce ? 0 : 0.8 });
-  // draw legs one after another: solid lines "grow", dashed (estimated) ones fade in
-  if (!reduce) {
+  const all = () => map.flyToBounds(L.featureGroup(lines).getBounds(), { padding: [30, 30], duration: reduce ? 0 : 0.8 });
+  all();
+  if (!reduce) { // legs draw in one after another after the fly-to (moveend doesn't fire if the view barely changes)
     lines.forEach(pl => (pl.getElement().style.opacity = 0));
-    map.once('moveend', () => lines.forEach((pl, i) => {
+    setTimeout(() => lines.forEach((pl, i) => {
       const el = pl.getElement(), solid = !r.legs[i].est;
       if (solid) { const n = el.getTotalLength(); el.style.strokeDasharray = n; el.style.strokeDashoffset = n; }
       setTimeout(() => { el.style.opacity = 1; if (solid) el.style.strokeDashoffset = 0; }, 30 + i * 350);
-      // drop the trick once drawn, or zooming would cut the line
-      setTimeout(() => { if (solid) el.style.strokeDasharray = el.style.strokeDashoffset = ''; }, 30 + i * 350 + 900);
-    }));
+      setTimeout(() => { if (solid) el.style.strokeDasharray = el.style.strokeDashoffset = ''; }, 30 + i * 350 + 900); // or zooming cuts the line
+    }), 850);
   }
 
-  const fare = r.fare ? ` · ค่าโดยสาร ${r.fareComplete ? '' : 'อย่างน้อย '}฿${r.fare}` : '';
-  $('out').innerHTML = `
-    <div class="sum"><p class="sub">${r.est ? 'รวมโดยประมาณ' : 'รวม'}</p>
-      <div class="big">${r.est ? '~' : ''}${dur(r.total)}</div>
-      <p class="sub">ออกตอนนี้ ถึงประมาณ ${clock(r.now + r.total)} · ${r.legs.length} ช่วง${fare}</p></div>
-    ${r.legs.map((l, i) => `
-      <div class="leg" data-i="${i}" tabindex="0">
-        <div class="ic"><i class="ti ${MODE[l.mode][0]}" aria-hidden="true"></i></div>
-        <div style="flex:1;min-width:0">
-          <div>${l.mode === 'walk' || l.mode === 'local' ? esc(MODE[l.mode][1]) : esc(MODE[l.mode][1] + ' ' + l.name)}</div>
-          <p class="sub">${esc(l.from.name)} → ${esc(l.to.name)}</p>
-          <p class="sub">${esc(detail(l))}</p>
-          <div class="more" hidden></div>
-        </div>
-        <div class="t">${dur(l.min)}<br><span class="b ${l.est ? 'est' : 'real'}">${l.est ? '~ประมาณ' : 'ตามตาราง'}</span></div>
-      </div>`).join('')}
-    <p class="sub" style="margin-top:10px"><span class="b est">~ประมาณ</span> คิดจากระยะทางและความถี่ ไม่ใช่ตารางเดินรถ</p>`;
+  const s = steps(r);
+  const tl = (x, approx) => (approx ? '~' : '') + clock(x);
+  const chips = r.legs.filter((l, i) => l.mode !== 'walk' || (i === r.legs.length - 1 && l.min > 3))
+    .map(l => `<span class="chip" style="--c:${color(l)}"><i class="ti ${ICON[l.mode]}" aria-hidden="true"></i>${esc(l.mode === 'walk' ? dur(l.min) : l.mode === 'local' ? 'Grab' : l.chip)}</span>`)
+    .join('<i class="ti ti-chevron-right" aria-hidden="true"></i>');
+  const fare = r.fare ? ` · ฿${r.fare}${r.fareComplete ? '' : '+'}` : '';
 
-  $('out').querySelectorAll('.leg').forEach(el => el.onclick = el.onkeydown = e => {
+  $('out').innerHTML = `
+    <div class="head"><p class="sub">ไป ${esc(dest.name)}</p>
+      <div class="big">ถึง ${tl(s.end, s.approx)}</div>
+      <p class="sub">${s.approx ? '~' : ''}${dur(r.total)}${fare}</p>
+      <div class="chips">${chips}</div></div>
+    ${s.list.map((x, k) => `
+      <div class="st" data-i="${x.i}" tabindex="0" style="--c:${color(x.l)}">
+        <div class="tm">${x.exact != null ? clock(x.exact) : tl(x.t, x.approx)}</div>
+        <div class="ln ${x.dashed ? 'd' : ''}"><div class="dot"></div></div>
+        <div class="bd"><div><i class="ti ${x.icon}" aria-hidden="true" style="color:var(--c)"></i> ${x.title}</div>
+          ${x.lines.filter(Boolean).map(t => `<p class="sub">${t}</p>`).join('')}
+          ${x.ride ? '<p class="ex"><i class="ti ti-photo" aria-hidden="true"></i> ดูจุดขึ้นรถ</p><div class="more" hidden></div>' : ''}</div>
+      </div>`).join('')}
+    <div class="st" style="--c:#D85A30;cursor:default"><div class="tm" style="color:var(--text);font-weight:600">${tl(s.end, s.approx)}</div>
+      <div class="ln end"><div class="dot" style="background:#D85A30"></div></div><div class="bd"><b>ถึง ${esc(dest.name)}</b></div></div>
+    ${s.approx ? '<p class="sub" style="border-top:1px solid var(--line);padding-top:8px">~ = เวลาประมาณจากระยะทางและความถี่ ไม่ใช่ตารางเดินรถ</p>' : ''}`;
+
+  $('out').querySelectorAll('.st[data-i]').forEach(el => el.onclick = el.onkeydown = e => {
     if (e.type === 'keydown' && e.key !== 'Enter') return;
     const i = +el.dataset.i, l = r.legs[i], was = el.classList.contains('on');
-    $('out').querySelectorAll('.leg').forEach(x => x.classList.remove('on'));
-    $('out').querySelectorAll('.more').forEach(x => x.hidden = true);
+    $('out').querySelectorAll('.st').forEach(x => x.classList.remove('on'));
+    $('out').querySelectorAll('.more').forEach(x => (x.hidden = true));
     lines.forEach((pl, j) => pl.setStyle({ opacity: was || j === i ? 0.9 : 0.2, weight: !was && j === i ? 7 : 5 }));
-    if (was) return map.flyToBounds(L.featureGroup(lines).getBounds(), { padding: [30, 30] });
+    if (was) return all();
     el.classList.add('on');
     map.flyToBounds(lines[i].getBounds(), { padding: [40, 40], maxZoom: 17, duration: reduce ? 0 : 0.6 });
-    if (l.mode !== 'walk') boardingPoint(el.querySelector('.more'), l.from);
+    const box = el.querySelector('.more');
+    if (box) boardingPoint(box, l.from);
   });
 }
 
 async function boardingPoint(box, p) {
   box.hidden = false;
   const sv = `<a href="https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=${p.lat},${p.lon}" target="_blank" rel="noopener">Google Street View</a>`;
-  box.innerHTML = `<p class="sub">จุดขึ้นรถ: ${esc(p.name)}</p>${sv}`;
+  box.innerHTML = sv;
   const ph = await fetch(`/api/photo?at=${p.lat},${p.lon}`).then(r => r.json()).catch(() => null);
   if (box.hidden) return;
-  box.innerHTML = (ph ? `<img src="${esc(ph.img)}" alt="ภาพถนนใกล้${esc(p.name)}" loading="lazy"><p class="sub">ภาพ © Mapillary · ${esc(ph.date)} · ตำแหน่งอาจคลาดเคลื่อนไม่กี่สิบเมตร</p>` : '<p class="sub">ไม่มีภาพจาก Mapillary แถวนี้</p>')
-    + `<p class="sub">จุดขึ้นรถ: ${esc(p.name)}</p>${sv}` + (ph ? `<a href="${esc(ph.link)}" target="_blank" rel="noopener">เปิดใน Mapillary</a>` : '');
+  box.innerHTML = (ph ? `<img src="${esc(ph.img)}" alt="ภาพถนนใกล้${esc(p.name)}" loading="lazy"><p class="sub">ภาพ © Mapillary · ${esc(ph.date)} · ตำแหน่งอาจคลาดไม่กี่สิบเมตร</p>` : '<p class="sub">ไม่มีภาพจาก Mapillary แถวนี้</p>')
+    + sv + (ph ? `<a href="${esc(ph.link)}" target="_blank" rel="noopener">เปิดใน Mapillary</a>` : '');
 }
 </script>
 </body>
