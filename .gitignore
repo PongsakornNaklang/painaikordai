@@ -4,4 +4,3 @@ data/gtfs/
 data/srt/
 *.zip
 .DS_Store
-data/graph.json

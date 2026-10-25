@@ -10,6 +10,11 @@ node server.mjs    # http://localhost:3000  (dev: ?from=lat,lon แทน GPS)
 
 `.env`: `MAPILLARY_TOKEN=MLY|...` สำหรับรูปจุดขึ้นรถ (ไม่มีก็ใช้ได้ แค่ไม่มีรูป)
 
+## Vercel
+- `public/` = หน้าเว็บ, `api/*.mjs` = functions (ใช้ `app.mjs` ร่วมกับ `server.mjs`), region `sin1`
+- `data/graph.json` อยู่ใน git เพราะ Vercel ไม่มีไฟล์ GTFS zip ให้ build — แก้ข้อมูลแล้วรัน `node build.mjs` และ commit ใหม่
+- ตั้ง env `MAPILLARY_TOKEN` ใน Vercel project
+
 ## ข้อมูล
 - นำทาง สนข. GTFS (CC BY 4.0): รถไฟฟ้า รถเมล์ เรือ ในกรุงเทพฯ และปริมณฑล
 - ตารางเดินรถ รฟท. (data.go.th / MOT, ปี 2023): เวลาจริงของรถไฟทางไกล
