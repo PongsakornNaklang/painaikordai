@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ไปไหนก็ได้</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.19.0/dist/tabler-icons.min.css">
+<style>
+:root{--bg:#fff;--card:#f6f5f2;--text:#1f1e1c;--muted:#6b6a65;--line:#e4e2dc;--accent:#185FA5;--real:#0F6E56;--real-bg:#E1F5EE;--est:#854F0B;--est-bg:#FAEEDA;--err:#A32D2D}
+@media (prefers-color-scheme:dark){:root{--bg:#1c1c1b;--card:#262624;--text:#eceae4;--muted:#a3a19a;--line:#3a3936;--accent:#85B7EB;--real:#9FE1CB;--real-bg:#085041;--est:#FAC775;--est-bg:#633806;--err:#F09595}}
+*{box-sizing:border-box}
+body{margin:0;font:15px/1.5 system-ui,-apple-system,"Noto Sans Thai",sans-serif;background:var(--bg);color:var(--text);display:flex;flex-direction:column;height:100dvh}
+#map{flex:0 0 42dvh;background:var(--card)}
+#panel{flex:1;overflow:auto;padding:12px 16px 24px;border-top:1px solid var(--line)}
+@media (min-width:800px){body{flex-direction:row-reverse}#map{flex:1;height:100dvh}#panel{flex:0 0 400px;border:0;border-left:1px solid var(--line)}}
+h1{font-size:20px;font-weight:600;margin:4px 0 12px}
+.row{display:flex;align-items:center;gap:8px}
+.lab{font-size:12px;color:var(--muted);margin:10px 0 4px}
+.box{padding:9px 12px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--text);font:inherit;width:100%}
+#sugg{border:1px solid var(--line);border-radius:10px;margin-top:6px;overflow:hidden}
+#sugg:empty{display:none}
+#sugg button{display:block;width:100%;text-align:left;padding:8px 12px;border:0;border-top:1px solid var(--line);background:none;color:inherit;font:inherit;cursor:pointer}
+#sugg button:first-child{border-top:0}
+#sugg button:hover,#sugg button:focus{background:var(--card)}
+.sub{font-size:12px;color:var(--muted);margin:1px 0 0}
+.sum{background:var(--card);border-radius:10px;padding:12px;margin:12px 0 4px}
+.big{font-size:24px;font-weight:600}
+.leg{display:flex;gap:10px;padding:10px 4px;border-top:1px solid var(--line);cursor:pointer;border-radius:6px}
+.leg:hover{background:var(--card)}
+.leg.on{background:var(--card)}
+.ic{width:32px;height:32px;border-radius:50%;background:var(--card);display:flex;align-items:center;justify-content:center;flex:none;font-size:18px;color:var(--muted)}
+.leg .t{text-align:right;white-space:nowrap}
+.b{font-size:11px;padding:1px 7px;border-radius:6px;display:inline-block;margin-top:2px}
+.real{background:var(--real-bg);color:var(--real)}.est{background:var(--est-bg);color:var(--est)}
+.more{margin:8px 0 2px}
+.more img{width:100%;border-radius:8px;display:block;aspect-ratio:4/3;object-fit:cover;background:var(--card)}
+.more a{color:var(--accent);font-size:13px;margin-right:12px}
+.err{color:var(--err);font-size:13px;margin-top:8px}
+.anim{transition:stroke-dashoffset .8s ease-out,opacity .3s}
+@media (prefers-reduced-motion:reduce){.anim{transition:none}}
+</style>
+</head>
+<body>
+<div id="map"></div>
+<div id="panel">
+  <h1>ไปไหนก็ได้</h1>
+  <p class="lab">จาก</p>
+  <div class="row box"><i class="ti ti-current-location" style="color:var(--accent)" aria-hidden="true"></i><span id="fromTxt">ตำแหน่งปัจจุบัน (GPS)</span></div>
+  <p class="sub">แตะแผนที่เพื่อเลือกจุดเริ่มเองได้</p>
+  <label class="lab" for="q" style="display:block">ไป</label>
+  <input id="q" class="box" placeholder="ประตูท่าแพ เชียงใหม่" autocomplete="off">
+  <div id="sugg" role="listbox"></div>
+  <div id="msg"></div>
+  <div id="out"></div>
+  <p class="sub" style="margin-top:20px">ข้อมูล: นำทาง สนข. (GTFS), ตารางเดินรถ รฟท., Zenodo BusOnlineTicket 2024, © OpenStreetMap, ภาพ © Mapillary · CC BY / CC BY-SA</p>
+</div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const dur = m => (m >= 60 ? Math.floor(m / 60) + ' ชม. ' : '') + (m % 60 || m < 60 ? Math.round(m % 60) + ' นาที' : '');
+const clock = m => { m = ((Math.round(m) % 1440) + 1440) % 1440; return String(Math.floor(m / 60)).padStart(2, '0') + ':' + String(m % 60).padStart(2, '0'); };
+const MODE = { walk: ['ti-walk', 'เดิน'], metro: ['ti-train', 'รถไฟฟ้า'], train: ['ti-train', 'รถไฟ'], bus: ['ti-bus', 'รถเมล์'], coach: ['ti-bus', 'รถทัวร์/รถตู้'], van: ['ti-car', 'รถตู้'], boat: ['ti-ship', 'เรือ'], ferry: ['ti-ship', 'เรือ'], local: ['ti-car', 'สองแถว / Grab'] };
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+const map = L.map('map', { zoomControl: false }).setView([13.75, 100.5], 6);
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19, attribution: '© OpenStreetMap' }).addTo(map);
+let from = new URLSearchParams(location.search).get('from')?.split(',').map(Number) || null; // dev: ?from=lat,lon
+let dest = null, layers = L.layerGroup().addTo(map), fromMarker = null;
+
+function setFrom(p, label) {
+  from = p; $('fromTxt').textContent = label;
+  fromMarker?.remove();
+  fromMarker = L.circleMarker(p, { radius: 7, color: '#fff', weight: 2, fillColor: '#378ADD', fillOpacity: 1 }).addTo(map);
+}
+if (from) setFrom(from, 'จุดที่เลือก');
+map.on('click', e => { setFrom([e.latlng.lat, e.latlng.lng], 'จุดที่เลือกบนแผนที่'); if (dest) go(); });
+
+const getGPS = () => new Promise((ok, no) => navigator.geolocation
+  ? navigator.geolocation.getCurrentPosition(p => ok([p.coords.latitude, p.coords.longitude]), no, { enableHighAccuracy: true, timeout: 10000 })
+  : no());
+
+let t;
+$('q').addEventListener('input', () => {
+  clearTimeout(t);
+  const q = $('q').value.trim();
+  if (q.length < 2) return ($('sugg').innerHTML = '');
+  t = setTimeout(async () => {
+    const r = await fetch('/api/search?q=' + encodeURIComponent(q)).then(r => r.json());
+    if ($('q').value.trim() !== q) return;
+    $('sugg').innerHTML = r.length ? r.map((x, i) => `<button role="option" data-i="${i}">${esc(x.name)}<p class="sub">${esc(x.sub)}</p></button>`).join('') : '<p class="sub" style="padding:8px 12px">ไม่เจอชื่อนี้ ลองพิมพ์ชื่ออำเภอหรือจังหวัด</p>';
+    $('sugg').querySelectorAll('button').forEach(b => b.onclick = () => { dest = r[b.dataset.i]; $('q').value = dest.name; $('sugg').innerHTML = ''; go(); });
+  }, 300);
+});
+
+async function go() {
+  $('msg').innerHTML = ''; $('out').innerHTML = '<p class="sub" style="margin-top:12px">กำลังหาเส้นทาง…</p>';
+  if (!from) {
+    try { setFrom(await getGPS(), 'ตำแหน่งปัจจุบัน (GPS)'); }
+    catch { $('out').innerHTML = ''; $('msg').innerHTML = '<p class="err">หาตำแหน่งไม่ได้ เปิดการเข้าถึงตำแหน่ง หรือแตะแผนที่เพื่อเลือกจุดเริ่ม</p>'; return; }
+  }
+  const r = await fetch(`/api/route?from=${from}&to=${dest.lat},${dest.lon}`).then(r => r.json()).catch(() => ({ error: 'เชื่อมต่อเซิร์ฟเวอร์ไม่ได้' }));
+  if (r.error) { $('out').innerHTML = ''; $('msg').innerHTML = `<p class="err">${esc(r.error)}</p>`; return; }
+  render(r);
+}
+
+function detail(l) {
+  if (l.mode === 'train') return `ออก ${clock(l.dep)} ถึง ${clock(l.arr)}` + (l.wait ? ` · รอ ${dur(l.wait)}` : '');
+  if (l.mode === 'metro') return `${l.stops} สถานี · รอ ~${l.wait} นาที`;
+  if (l.mode === 'coach' || l.mode === 'ferry') return `${Math.round(l.perDay)} เที่ยว/วัน · รอ ~${l.wait} นาที` + (l.fare ? ` · ฿${l.fare}` : '');
+  if (l.mode === 'local') return `${l.km} กม. · ไม่มีข้อมูลสาย คิดจากระยะทาง`;
+  if (l.mode === 'walk') return '';
+  return `${l.stops} ป้าย · มาทุก ~${Math.round(l.headway)} นาที`;
+}
+
+function render(r) {
+  layers.clearLayers();
+  const lines = r.legs.map(l => L.polyline(l.path, {
+    color: l.mode === 'walk' ? '#888780' : l.est ? '#BA7517' : '#1D9E75', weight: 5, opacity: 0.9,
+    dashArray: l.est ? '6 8' : null, className: 'anim', lineCap: 'round'
+  }).addTo(layers));
+  const last = r.legs.at(-1).to;
+  L.circleMarker([last.lat, last.lon], { radius: 7, color: '#fff', weight: 2, fillColor: '#D85A30', fillOpacity: 1 }).addTo(layers);
+  map.flyToBounds(L.featureGroup(lines).getBounds(), { padding: [30, 30], duration: reduce ? 0 : 0.8 });
+  // draw legs one after another: solid lines "grow", dashed (estimated) ones fade in
+  if (!reduce) {
+    lines.forEach(pl => (pl.getElement().style.opacity = 0));
+    map.once('moveend', () => lines.forEach((pl, i) => {
+      const el = pl.getElement(), solid = !r.legs[i].est;
+      if (solid) { const n = el.getTotalLength(); el.style.strokeDasharray = n; el.style.strokeDashoffset = n; }
+      setTimeout(() => { el.style.opacity = 1; if (solid) el.style.strokeDashoffset = 0; }, 30 + i * 350);
+      // drop the trick once drawn, or zooming would cut the line
+      setTimeout(() => { if (solid) el.style.strokeDasharray = el.style.strokeDashoffset = ''; }, 30 + i * 350 + 900);
+    }));
+  }
+
+  const fare = r.fare ? ` · ค่าโดยสาร ${r.fareComplete ? '' : 'อย่างน้อย '}฿${r.fare}` : '';
+  $('out').innerHTML = `
+    <div class="sum"><p class="sub">${r.est ? 'รวมโดยประมาณ' : 'รวม'}</p>
+      <div class="big">${r.est ? '~' : ''}${dur(r.total)}</div>
+      <p class="sub">ออกตอนนี้ ถึงประมาณ ${clock(r.now + r.total)} · ${r.legs.length} ช่วง${fare}</p></div>
+    ${r.legs.map((l, i) => `
+      <div class="leg" data-i="${i}" tabindex="0">
+        <div class="ic"><i class="ti ${MODE[l.mode][0]}" aria-hidden="true"></i></div>
+        <div style="flex:1;min-width:0">
+          <div>${l.mode === 'walk' || l.mode === 'local' ? esc(MODE[l.mode][1]) : esc(MODE[l.mode][1] + ' ' + l.name)}</div>
+          <p class="sub">${esc(l.from.name)} → ${esc(l.to.name)}</p>
+          <p class="sub">${esc(detail(l))}</p>
+          <div class="more" hidden></div>
+        </div>
+        <div class="t">${dur(l.min)}<br><span class="b ${l.est ? 'est' : 'real'}">${l.est ? '~ประมาณ' : 'ตามตาราง'}</span></div>
+      </div>`).join('')}
+    <p class="sub" style="margin-top:10px"><span class="b est">~ประมาณ</span> คิดจากระยะทางและความถี่ ไม่ใช่ตารางเดินรถ</p>`;
+
+  $('out').querySelectorAll('.leg').forEach(el => el.onclick = el.onkeydown = e => {
+    if (e.type === 'keydown' && e.key !== 'Enter') return;
+    const i = +el.dataset.i, l = r.legs[i], was = el.classList.contains('on');
+    $('out').querySelectorAll('.leg').forEach(x => x.classList.remove('on'));
+    $('out').querySelectorAll('.more').forEach(x => x.hidden = true);
+    lines.forEach((pl, j) => pl.setStyle({ opacity: was || j === i ? 0.9 : 0.2, weight: !was && j === i ? 7 : 5 }));
+    if (was) return map.flyToBounds(L.featureGroup(lines).getBounds(), { padding: [30, 30] });
+    el.classList.add('on');
+    map.flyToBounds(lines[i].getBounds(), { padding: [40, 40], maxZoom: 17, duration: reduce ? 0 : 0.6 });
+    if (l.mode !== 'walk') boardingPoint(el.querySelector('.more'), l.from);
+  });
+}
+
+async function boardingPoint(box, p) {
+  box.hidden = false;
+  const sv = `<a href="https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=${p.lat},${p.lon}" target="_blank" rel="noopener">Google Street View</a>`;
+  box.innerHTML = `<p class="sub">จุดขึ้นรถ: ${esc(p.name)}</p>${sv}`;
+  const ph = await fetch(`/api/photo?at=${p.lat},${p.lon}`).then(r => r.json()).catch(() => null);
+  if (box.hidden) return;
+  box.innerHTML = (ph ? `<img src="${esc(ph.img)}" alt="ภาพถนนใกล้${esc(p.name)}" loading="lazy"><p class="sub">ภาพ © Mapillary · ${esc(ph.date)} · ตำแหน่งอาจคลาดเคลื่อนไม่กี่สิบเมตร</p>` : '<p class="sub">ไม่มีภาพจาก Mapillary แถวนี้</p>')
+    + `<p class="sub">จุดขึ้นรถ: ${esc(p.name)}</p>${sv}` + (ph ? `<a href="${esc(ph.link)}" target="_blank" rel="noopener">เปิดใน Mapillary</a>` : '');
+}
+</script>
+</body>
+</html>

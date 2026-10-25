@@ -1,0 +1,585 @@
+mode,location,state,latitude,longitude,ADM3_EN,ADM3_PCODE,ADM2_EN,ADM2_PCODE,ADM1_EN,ADM1_PCODE
+bus,Amnat Charoen,Amnat Charoen,15.8640232,104.6278059,Bung,TH370101,Mueang Amnat Charoen,TH3701,Amnat Charoen,TH37
+bus,Hua Taphan District,Amnat Charoen,15.6975370288237,104.490093064897,Rattana Wari,TH370608,Hua Taphan,TH3706,Amnat Charoen,TH37
+bus,Lue Amnat District,Amnat Charoen,15.7007579608888,104.644736587461,Amnat,TH370701,Lue Amnat,TH3707,Amnat Charoen,TH37
+bus,Pathum Ratchawongsa District,Amnat Charoen,15.8925885929017,104.905643974213,Na Wa,TH370303,Pathum Ratchawongsa,TH3703,Amnat Charoen,TH37
+bus,Phana District,Amnat Charoen,15.6823255226184,104.846425465468,Phra Lao,TH370404,Phana,TH3704,Amnat Charoen,TH37
+bus,Senangkhanikhom District,Amnat Charoen,16.0398508266893,104.669366305678,Senangkhanikhom,TH370501,Senangkhanikhom,TH3705,Amnat Charoen,TH37
+bus,Ayutthaya,Ayutthaya,14.3535427,100.5645684,Pratu Chai,TH140101,Phra Nakhon Si Ayutthaya,TH1401,Phra Nakhon Si Ayutthaya,TH14
+bus,Tha Ruea District,Ayutthaya,14.53748525,100.715016094121,Tha Chao Sanuk,TH140210,Tha Ruea,TH1402,Phra Nakhon Si Ayutthaya,TH14
+bus,Valaya Alongkorn Rajabhat University,Ayutthaya,14.1334683,100.611438560925,Chiang Rak Noi,TH140602,Bang Pa-In,TH1406,Phra Nakhon Si Ayutthaya,TH14
+bus,Wang Noi District,Ayutthaya,14.23675245,100.727458456751,Lam Ta Sao,TH141101,Wang Noi,TH1411,Phra Nakhon Si Ayutthaya,TH14
+bus,Bang Bon District,Bangkok,13.6715083,100.4218947,Bang Bon,TH105001,Bang Bon,TH1050,Bangkok,TH10
+bus,Bang Khen District,Bangkok,13.8755881,100.5969277,Anusawari,TH100502,Bang Khen,TH1005,Bangkok,TH10
+bus,Bangkok,Bangkok,13.7263392,100.5086736,Khlong Ton Sai,TH101804,Khlong San,TH1018,Bangkok,TH10
+bus,Bangkok Bus Terminal (Eastern),Bangkok,13.7190948,100.58400595488,Phra Khanong,TH103303,Khlong Toei,TH1033,Bangkok,TH10
+bus,Bangkok Bus Terminal (Ekkamai),Bangkok,13.7190948,100.58400595488,Phra Khanong,TH103303,Khlong Toei,TH1033,Bangkok,TH10
+bus,Chatuchak,Bangkok,13.8030357,100.5502304,Chatuchak,TH103005,Chatuchak,TH1030,Bangkok,TH10
+bus,Chatuchak Coach Station (Mo Chit 2),Bangkok,13.8134383629399,100.549830230229,Chatuchak,TH103005,Chatuchak,TH1030,Bangkok,TH10
+bus,Don Mueang,Bangkok,13.9226541,100.6009966,Don Mueang,TH103604,Don Mueang,TH1036,Bangkok,TH10
+bus,Eastern Bus Terminal Bangkok Ekkamai,Bangkok,13.7190948,100.58400595488,Phra Khanong,TH103303,Khlong Toei,TH1033,Bangkok,TH10
+bus,Ekkamai Bus Terminal,Bangkok,13.7190948,100.58400595488,Phra Khanong,TH103303,Khlong Toei,TH1033,Bangkok,TH10
+bus,Lak Si,Bangkok,13.8843541,100.5816329,Talat Bang Khen,TH104102,Lak Si,TH1041,Bangkok,TH10
+bus,Mini Bus Terminal (Chatuchak),Bangkok,13.811764700214,100.549827141024,Chatuchak,TH103005,Chatuchak,TH1030,Bangkok,TH10
+bus,Mo Chit 2,Bangkok,13.8123644,100.547755225,Chatuchak,TH103005,Chatuchak,TH1030,Bangkok,TH10
+bus,Rangsit,Bangkok,13.7993876507123,100.564014723883,Chomphon,TH103004,Chatuchak,TH1030,Bangkok,TH10
+bus,Sai Tai Mai,Bangkok,13.7804047,100.4225441,Chimphli,TH101903,Taling Chan,TH1019,Bangkok,TH10
+bus,Southern Bangkok Bus Terminal (Sai Tai Mai),Bangkok,13.7803993,100.4230508,Chimphli,TH101903,Taling Chan,TH1019,Bangkok,TH10
+bus,Suvarnabhumi Airport,Bangkok,13.7227587,100.7272056513,Lat Krabang,TH101101,Lat Krabang,TH1011,Bangkok,TH10
+bus,Taling Chan District,Bangkok,13.7774708,100.4553273,Khlong Chak Phra,TH101901,Taling Chan,TH1019,Bangkok,TH10
+bus,Bueng Kan,Bueng Kan,18.3673678,103.6515916,Wisit,TH380110,Mueang Bueng Kan,TH3801,Bueng Kan,TH38
+bus,Seka District,Bueng Kan,17.9285778561165,103.953259837783,Seka,TH380401,Seka,TH3804,Bueng Kan,TH38
+bus,Ban Kradueng,Buriram,15.0976692,103.1717062,Ban Dan,TH312101,Ban Dan,TH3121,Buri Ram,TH31
+bus,Buriram,Buriram,14.9955693,103.1079187,Nai Mueang,TH310101,Mueang Buri Ram,TH3101,Buri Ram,TH31
+bus,Nang Rong District,Buriram,14.6289230181523,102.79326712258,Nang Rong,TH310401,Nang Rong,TH3104,Buri Ram,TH31
+bus,Phutthaisong District,Buriram,15.5492004389364,103.024639025295,Phutthaisong,TH310901,Phutthaisong,TH3109,Buri Ram,TH31
+bus,Prakhon Chai District,Buriram,14.6062591364978,103.1210928155,Prakhon Chai,TH310701,Prakhon Chai,TH3107,Buri Ram,TH31
+bus,Satuk District,Buriram,15.2976440838556,103.291793993062,Satuek,TH311101,Satuek,TH3111,Buri Ram,TH31
+bus,Bang Pakong District,Chachoengsao,13.5674068330243,100.934256980425,Bang Samak,TH240404,Bang Pakong,TH2404,Chachoengsao,TH24
+bus,Chachoengsao,Chachoengsao,13.6891784,101.0708268,Na Mueang,TH240101,Mueang Chachoengsao,TH2401,Chachoengsao,TH24
+bus,Phanom Sarakham,Chachoengsao,13.748243,101.3471785,Phanom Sarakham,TH240603,Phanom Sarakham,TH2406,Chachoengsao,TH24
+bus,Chai Nat,Chai Nat,15.1853305,100.1250568,Nai Mueang,TH180101,Mueang Chai Nat,TH1801,Chai Nat,TH18
+bus,Wat Sing District,Chai Nat,15.261603,100.0409853,Wat Sing,TH180301,Wat Sing,TH1803,Chai Nat,TH18
+bus,Ban Khwao District,Chaiyaphum,15.7785380300614,101.907085649577,Ban Khwao,TH360201,Ban Khwao,TH3602,Chaiyaphum,TH36
+bus,Ban Nong Waeng,Chaiyaphum,16.1111813,102.1574153,Khok Kung,TH361207,Kaeng Khro,TH3612,Chaiyaphum,TH36
+bus,Chaiyaphum,Chaiyaphum,15.8068082,102.0315003,Nai Mueang,TH360101,Mueang Chaiyaphum,TH3601,Chaiyaphum,TH36
+bus,Chatturat District,Chaiyaphum,15.5658079302568,101.845260406276,Ban Kok,TH360601,Chatturat,TH3606,Chaiyaphum,TH36
+bus,Kaeng Khro District,Chaiyaphum,16.1086331649903,102.258023449716,Chong Sam Mo,TH361201,Kaeng Khro,TH3612,Chaiyaphum,TH36
+bus,Kaset Sombun District,Chaiyaphum,16.2924767450515,101.955718634909,Kut Lo,TH360405,Kaset Sombun,TH3604,Chaiyaphum,TH36
+bus,Khon San District,Chaiyaphum,16.6156206,101.9150707,Khon San,TH361301,Khon San,TH3613,Chaiyaphum,TH36
+bus,Lahan,Chaiyaphum,15.5943698,101.9023924,Lahan,TH360607,Chatturat,TH3606,Chaiyaphum,TH36
+bus,Nong Bua Rawe District,Chaiyaphum,15.748855844735,101.75929441828,Nong Bua Rawe,TH360801,Nong Bua Rawe,TH3608,Chaiyaphum,TH36
+bus,Phu Khiao District,Chaiyaphum,16.3773655592078,102.128681135859,Phak Pang,TH361001,Phu Khiao,TH3610,Chaiyaphum,TH36
+bus,Sap Yai District,Chaiyaphum,15.6420885007547,101.629555197274,Sap Yai,TH361601,Sap Yai,TH3616,Chaiyaphum,TH36
+bus,Thep Sathit District,Chaiyaphum,15.3931933129027,101.451204308549,Wa Tabaek,TH360901,Thep Sathit,TH3609,Chaiyaphum,TH36
+bus,Chanthaburi,Chanthaburi,12.6064515,102.0996672,Wat Mai,TH220102,Mueang Chanthaburi,TH2201,Chanthaburi,TH22
+bus,Kaeng Hang Maeo District,Chanthaburi,13.0087264753891,101.905625974887,Kaeng Hang Maeo,TH220801,Kaeng Hang Maeo,TH2208,Chanthaburi,TH22
+bus,Khlung District,Chanthaburi,12.4460731875133,102.213683386285,Kwian Hak,TH220203,Khlung,TH2202,Chanthaburi,TH22
+bus,Na Yai Am District,Chanthaburi,12.7707202161627,101.854839351477,Na Yai Am,TH220901,Na Yai Am,TH2209,Chanthaburi,TH22
+bus,Tha Mai District,Chanthaburi,12.6222485136626,101.971306609517,Tha Mai,TH220301,Tha Mai,TH2203,Chanthaburi,TH22
+bus,Chai Prakan District,Chiang Mai,19.7323397675849,99.1401765963349,Pong Tam,TH502101,Chai Prakan,TH5021,Chiang Mai,TH50
+bus,Chiang Dao District,Chiang Mai,19.4251355,98.8334551077846,Chiang Dao,TH500401,Chiang Dao,TH5004,Chiang Mai,TH50
+bus,Chiang Mai,Chiang Mai,18.7882778,98.9858802,Phra Sing,TH500102,Mueang Chiang Mai,TH5001,Chiang Mai,TH50
+bus,Chom Thong District,Chiang Mai,18.416975048988,98.6760782883706,Ban Luang,TH500203,Chom Thong,TH5002,Chiang Mai,TH50
+bus,Doi Inthanon,Chiang Mai,18.5884834,98.4874637,Chang Khoeng,TH500301,Mae Chaem,TH5003,Chiang Mai,TH50
+bus,Doi Tao District,Chiang Mai,17.95290605,98.6854490004147,Tha Duea,TH501702,Doi Tao,TH5017,Chiang Mai,TH50
+bus,Fang District,Chiang Mai,18.7864482,98.9975773,Chang Khlan,TH500105,Mueang Chiang Mai,TH5001,Chiang Mai,TH50
+bus,Mae Ai District,Chiang Mai,20.0296984,99.2849689520633,Mae Ai,TH501001,Mae Ai,TH5010,Chiang Mai,TH50
+bus,Mae Kampong,Chiang Mai,18.8654131160418,99.3489637265721,Huai Kaeo,TH502304,Mae On,TH5023,Chiang Mai,TH50
+bus,Mae On,Chiang Mai,18.776400551046,99.2480329133252,On Nuea,TH502301,Mae On,TH5023,Chiang Mai,TH50
+bus,Mae Rim District,Chiang Mai,18.9162924,98.9604309343799,Rim Tai,TH500701,Mae Rim,TH5007,Chiang Mai,TH50
+bus,Mae Taeng District,Chiang Mai,19.1220471,98.9434348800713,San Mahaphon,TH500601,Mae Taeng,TH5006,Chiang Mai,TH50
+bus,Mon Jam,Chiang Mai,18.9484215,98.794487,Mae Raem,TH500707,Mae Rim,TH5007,Chiang Mai,TH50
+bus,San Kamphaeng Hot Springs,Chiang Mai,18.81609025,99.2280110713028,Ban Sahakon,TH502303,Mae On,TH5023,Chiang Mai,TH50
+bus,Chiang Khong District,Chiang Rai,20.26024375,100.407333677214,Wiang,TH570301,Chiang Khong,TH5703,Chiang Rai,TH57
+bus,Chiang Rai,Chiang Rai,19.9068867,99.8332739,Wiang,TH570101,Mueang Chiang Rai,TH5701,Chiang Rai,TH57
+bus,Mae Chan District,Chiang Rai,20.1471135,99.8531809,Mae Chan,TH570701,Mae Chan,TH5707,Chiang Rai,TH57
+bus,Mae Fah Luang University,Chiang Rai,20.0449482,99.8968439102582,Tha Sut,TH570121,Mueang Chiang Rai,TH5701,Chiang Rai,TH57
+bus,Mae Sai District,Chiang Rai,20.4397711,99.8829694,Mae Sai,TH570901,Mae Sai,TH5709,Chiang Rai,TH57
+bus,Phan District,Chiang Rai,20.1469818079308,99.8553619506276,Mae Chan,TH570701,Mae Chan,TH5707,Chiang Rai,TH57
+bus,Thoeng district,Chiang Rai,19.6856984474522,100.193814242881,Wiang,TH570401,Thoeng,TH5704,Chiang Rai,TH57
+bus,Ban Bueng District,Chonburi,13.3116545825254,101.112201070984,Ban Bueng,TH200201,Ban Bueng,TH2002,Chon Buri,TH20
+bus,Bang Lamung District,Chonburi,12.9770572092683,100.91389900484,Na Kluea,TH200408,Bang Lamung,TH2004,Chon Buri,TH20
+bus,Chonburi,Chonburi,13.3662087,100.9872185,Bang Pla Soi,TH200101,Mueang Chon Buri,TH2001,Chon Buri,TH20
+bus,Khaokhunsong District,Chonburi,13.100795961908,101.183365041534,Khao Khan Song,TH200706,Si Racha,TH2007,Chon Buri,TH20
+bus,Nong Ri,Chonburi,13.3507899775112,101.033824811632,Nong Ri,TH200106,Mueang Chon Buri,TH2001,Chon Buri,TH20
+bus,Nong Yai District,Chonburi,13.1564537761708,101.366094282655,Nong Yai,TH200301,Nong Yai,TH2003,Chon Buri,TH20
+bus,Pattaya,Chonburi,12.9366924,100.8865002,Nong Prue,TH200402,Bang Lamung,TH2004,Chon Buri,TH20
+bus,Phan Thong District,Chonburi,13.443245893637,101.108800068633,Map Pong,TH200503,Phan Thong,TH2005,Chon Buri,TH20
+bus,Sattahip District,Chonburi,12.6631251191495,100.905635296378,Sattahip,TH200901,Sattahip,TH2009,Chon Buri,TH20
+bus,Si Racha District,Chonburi,13.174691010679,100.930861440141,Si Racha,TH200701,Si Racha,TH2007,Chon Buri,TH20
+bus,Chumphon,Chumphon,10.4961355,99.1778731,Tha Taphao,TH860101,Mueang Chumphon,TH8601,Chumphon,TH86
+bus,Lamae District,Chumphon,9.76815302447383,99.0922299526679,Lamae,TH860501,Lamae,TH8605,Chumphon,TH86
+bus,Lang Suan District,Chumphon,9.94569868973941,99.0786170730731,Khan Ngoen,TH860402,Lang Suan,TH8604,Chumphon,TH86
+bus,Kalasin,Kalasin,16.434034,103.5059403,Kalasin,TH460101,Mueang Kalasin,TH4601,Kalasin,TH46
+bus,Kham Muang,Kalasin,16.9287288,103.6347085,Thung Khlong,TH461001,Kham Muang,TH4610,Kalasin,TH46
+bus,Kamphaeng Phet,Kamphaeng Phet,16.4748045,99.5280072,Nai Mueang,TH620101,Mueang Kamphaeng Phet,TH6201,Kamphaeng Phet,TH62
+bus,Khlong Lan,Kamphaeng Phet,16.2036717,99.3163633,Khlong Nam Lai,TH620301,Khlong Lan,TH6203,Kamphaeng Phet,TH62
+bus,Nong Khla,Kamphaeng Phet,16.44669095,99.8177293287547,Nong Khla,TH620202,Sai Ngam,TH6202,Kamphaeng Phet,TH62
+bus,Erawan National Park,Kanchanaburi,14.34863835,99.0697259426995,Tha Kradan,TH710404,Si Sawat,TH7104,Kanchanaburi,TH71
+bus,Kanchanaburi,Kanchanaburi,14.0227073,99.5323173,Ban Nuea,TH710101,Mueang Kanchanaburi,TH7101,Kanchanaburi,TH71
+bus,Tha Maka District,Kanchanaburi,13.9207758407643,99.7652941268451,Tha Maka,TH710506,Tha Maka,TH7105,Kanchanaburi,TH71
+bus,Tha Muang District,Kanchanaburi,13.9668149586552,99.6384958572895,Tha Muang,TH710601,Tha Muang,TH7106,Kanchanaburi,TH71
+bus,Ban Phai District,Khon Kaen,16.0599850837762,102.731205288864,Nai Mueang,TH401002,Ban Phai,TH4010,Khon Kaen,TH40
+bus,Chum Phae District,Khon Kaen,16.5442298,102.0995321,Chum Phae,TH400501,Chum Phae,TH4005,Khon Kaen,TH40
+bus,Khon Kaen,Khon Kaen,16.4303916,102.8355904,Nai Mueang,TH400101,Mueang Khon Kaen,TH4001,Khon Kaen,TH40
+bus,Non Sila District,Khon Kaen,15.9739950638764,102.669132447313,Non Daeng,TH402505,Non Sila,TH4025,Khon Kaen,TH40
+bus,Nong Na Kham,Khon Kaen,16.8064506,102.336033,Ban Khok,TH402302,Nong Na Kham,TH4023,Khon Kaen,TH40
+bus,Nong Ruea,Khon Kaen,16.4974072,102.4322648,Nong Ruea,TH400401,Nong Ruea,TH4004,Khon Kaen,TH40
+bus,Nong Song Hong District,Khon Kaen,15.7336653568278,102.795454939201,Nong Song Hong,TH401501,Nong Song Hong,TH4015,Khon Kaen,TH40
+bus,Phu Pha Man District,Khon Kaen,16.646025,101.9023325,Phu Pha Man,TH402003,Phu Pha Man,TH4020,Khon Kaen,TH40
+bus,Phu Wiang District,Khon Kaen,16.6479017,102.3807774,Phu Wiang,TH401617,Phu Wiang,TH4016,Khon Kaen,TH40
+bus,Ao Luek District,Krabi,8.37792254419395,98.7217286115169,Ao Luek Tai,TH810501,Ao Luek,TH8105,Krabi,TH81
+bus,Ao Nang,Krabi,7.72117335,98.7655426259269,Ao Nang,TH810116,Mueang Krabi,TH8101,Krabi,TH81
+bus,Khao Phanom District,Krabi,8.26495450168518,99.0492920355676,Khao Phanom,TH810201,Khao Phanom,TH8102,Krabi,TH81
+bus,Khao Tho Intersection,Krabi,8.21623323846536,98.8086908757013,Khao Khram,TH810105,Mueang Krabi,TH8101,Krabi,TH81
+bus,Khlong Thom District,Krabi,7.9539321,99.1441112,Khlong Thom Tai,TH810401,Khlong Thom,TH8104,Krabi,TH81
+bus,Koh Lanta,Krabi,7.681856,99.089877,Ko Lanta Noi,TH810302,Ko Lanta,TH8103,Krabi,TH81
+bus,Koh Phi Phi,Krabi,7.7522403,98.7766433666743,Ao Nang,TH810116,Mueang Krabi,TH8101,Krabi,TH81
+bus,Krabi,Krabi,8.0634637,98.9162345,Pak Nam,TH810101,Mueang Krabi,TH8101,Krabi,TH81
+bus,Nuea Khlong District,Krabi,8.07486370561819,99.0036219908902,Nuea Khlong,TH810801,Nuea Khlong,TH8108,Krabi,TH81
+bus,Plai Phraya District,Krabi,8.53347020306621,98.8638897675636,Plai Phraya,TH810601,Plai Phraya,TH8106,Krabi,TH81
+bus,Railay,Krabi,8.0106758,98.8396583,Ao Nang,TH810116,Mueang Krabi,TH8101,Krabi,TH81
+bus,Ko Kha District,Lampang,18.1918426530881,99.3953723934963,Tha Pha,TH520308,Ko Kha,TH5203,Lampang,TH52
+bus,Lampang,Lampang,18.2899489,99.4958526,Suan Dok,TH520103,Mueang Lampang,TH5201,Lampang,TH52
+bus,Ngao District,Lampang,18.7781218,99.9702589,Na Kae,TH520506,Ngao,TH5205,Lampang,TH52
+bus,Thoen District,Lampang,17.6256525,99.2327639,Lom Raet,TH520801,Thoen,TH5208,Lampang,TH52
+bus,Doi Ti,Lamphun,18.5525832,99.0485353,Pa Sak,TH510110,Mueang Lamphun,TH5101,Lamphun,TH51
+bus,Lamphun,Lamphun,18.5776383,99.0069034,Nai Mueang,TH510101,Mueang Lamphun,TH5101,Lamphun,TH51
+bus,Li District,Lamphun,17.8029057767454,98.9505588299724,Li,TH510401,Li,TH5104,Lamphun,TH51
+bus,Chiang Khan,Loei,17.8945335,101.6559575,Chiang Khan,TH420301,Chiang Khan,TH4203,Loei,TH42
+bus,Dan Sai District,Loei,17.279937,101.1468203,Dan Sai,TH420501,Dan Sai,TH4205,Loei,TH42
+bus,Loei,Loei,17.490375,101.7286456,Kut Pong,TH420101,Mueang Loei,TH4201,Loei,TH42
+bus,Nong Hin Market,Loei,17.1222656221493,101.859791285114,Nong Hin,TH421401,Nong Hin,TH4214,Loei,TH42
+bus,Pak Chom District,Loei,17.913099664915418,101.95731425356719,Chiang Klom,TH420402,Pak Chom,TH4204,Loei,TH42
+bus,Pha Khao District,Loei,17.0502505399137,102.01269954433903,Non Po Daeng,TH421203,Pha Khao,TH4212,Loei,TH42
+bus,Phu Kradueng District,Loei,16.8844161775273,101.884762989508,Phu Kradueng,TH421007,Phu Kradueng,TH4210,Loei,TH42
+bus,Phu Ruea District,Loei,17.4497426295182,101.355775291381,Nong Bua,TH420701,Phu Ruea,TH4207,Loei,TH42
+bus,Tha Li District,Loei,17.617506223528743,101.43934408088055,Tha Li,TH420801,Tha Li,TH4208,Loei,TH42
+bus,Wang Saphung District,Loei,17.3003733606195,101.768650302181,Wang Saphung,TH420901,Wang Saphung,TH4209,Loei,TH42
+bus,Lam Sonthi District,Lopburi,15.3017783948072,101.363864544146,Lam Sonthi,TH161001,Lam Sonthi,TH1610,Lop Buri,TH16
+bus,Lopburi,Lopburi,14.8023289,100.6146858,Thale Chup Son,TH160101,Mueang Lop Buri,TH1601,Lop Buri,TH16
+bus,Mae Hong Son,Mae Hong Son,19.3015068,97.9666073,Chong Kham,TH580101,Mueang Mae Hong Son,TH5801,Mae Hong Son,TH58
+bus,Pai,Mae Hong Son,19.3581061,98.4405794,Wiang Tai,TH580301,Pai,TH5803,Mae Hong Son,TH58
+bus,Maha Sarakham,Maha Sarakham,16.1880948,103.2987346,Talat,TH440101,Mueang Maha Sarakham,TH4401,Maha Sarakham,TH44
+bus,Phayakkhaphum Phisai District,Maha Sarakham,15.5163791442421,103.193539950528,Palan,TH440801,Phayakkhaphum Phisai,TH4408,Maha Sarakham,TH44
+bus,Wapi Pathum District,Maha Sarakham,15.84639,103.3802807,Nong Saeng,TH440901,Wapi Pathum,TH4409,Maha Sarakham,TH44
+bus,Don Tan District,Mukdahan,16.3167911342389,104.920177277422,Don Tan,TH490301,Don Tan,TH4903,Mukdahan,TH49
+bus,Khamcha i District,Mukdahan,16.5774299696088,104.419425224204,Nam Thiang,TH490514,Khamcha-I,TH4905,Mukdahan,TH49
+bus,Mukdahan,Mukdahan,16.5414065,104.7290699,Mukdahan,TH490101,Mueang Mukdahan,TH4901,Mukdahan,TH49
+bus,Nakhon Pathom,Nakhon Pathom,13.8190071,100.0639917,Phra Pathom Chedi,TH730101,Mueang Nakhon Pathom,TH7301,Nakhon Pathom,TH73
+bus,Ban Phaeng District,Nakhon Phanom,17.9683715384719,104.215896840583,Ban Phaeng,TH480401,Ban Phaeng,TH4804,Nakhon Phanom,TH48
+bus,Na Kae,Nakhon Phanom,16.9461461,104.4995274,Na Kae,TH480701,Na Kae,TH4807,Nakhon Phanom,TH48
+bus,Nakhon Phanom,Nakhon Phanom,17.4032326,104.7853098,Nai Mueang,TH480101,Mueang Nakhon Phanom,TH4801,Nakhon Phanom,TH48
+bus,Renu Nakhon,Nakhon Phanom,17.0509279,104.6775822,Phon Thong,TH480602,Renu Nakhon,TH4806,Nakhon Phanom,TH48
+bus,Sri Songkhram,Nakhon Phanom,17.6327347890791,104.247518955297,Si Songkhram,TH480801,Si Songkhram,TH4808,Nakhon Phanom,TH48
+bus,That Phanom District,Nakhon Phanom,16.9364853408481,104.709503739223,That Phanom,TH480501,That Phanom,TH4805,Nakhon Phanom,TH48
+bus,Dan Khun Thot District,Nakhon Ratchasima,15.2101355299815,101.766674467158,Dan Khun Thot,TH300802,Dan Khun Thot,TH3008,Nakhon Ratchasima,TH30
+bus,Korat,Nakhon Ratchasima,14.9747339,102.0981161,Nai Mueang,TH300101,Mueang Nakhon Ratchasima,TH3001,Nakhon Ratchasima,TH30
+bus,Nakhon Ratchasima,Nakhon Ratchasima,14.9747339,102.0981161,Nai Mueang,TH300101,Mueang Nakhon Ratchasima,TH3001,Nakhon Ratchasima,TH30
+bus,Non Daeng District,Nakhon Ratchasima,15.4111533887922,102.540363339798,Non Daeng,TH302401,Non Daeng,TH3024,Nakhon Ratchasima,TH30
+bus,Pak Chong District,Nakhon Ratchasima,14.7125554682407,101.421861634646,Pak Chong,TH302101,Pak Chong,TH3021,Nakhon Ratchasima,TH30
+bus,Phimai District,Nakhon Ratchasima,15.2206133,102.486021,Nai Mueang,TH301501,Phimai,TH3015,Nakhon Ratchasima,TH30
+bus,Prathai District,Nakhon Ratchasima,15.5337125288892,102.722716175603,Prathai,TH301301,Prathai,TH3013,Nakhon Ratchasima,TH30
+bus,Sikhio District,Nakhon Ratchasima,14.8924432,101.7231914,Sikhio,TH302001,Sikhio,TH3020,Nakhon Ratchasima,TH30
+bus,Sung Noen District,Nakhon Ratchasima,14.8992815682559,101.820654366759,Sung Noen,TH301801,Sung Noen,TH3018,Nakhon Ratchasima,TH30
+bus,Nakhon Sawan,Nakhon Sawan,15.705783,100.1330046,Pak Nam Pho,TH600101,Mueang Nakhon Sawan,TH6001,Nakhon Sawan,TH60
+bus,Chian Yai,Nakhon Si Thammarat,8.1692922,100.1444549,Chian Yai,TH800601,Chian Yai,TH8006,Nakhon Si Thammarat,TH80
+bus,Chulabhorn District,Nakhon Si Thammarat,8.07586434911838,99.869588265835,Sam Tambon,TH801906,Chulabhorn,TH8019,Nakhon Si Thammarat,TH80
+bus,Hua Sai District,Nakhon Si Thammarat,8.04071019392196,100.275958162636,Hua Sai,TH801601,Hua Sai,TH8016,Nakhon Si Thammarat,TH80
+bus,Khanom District,Nakhon Si Thammarat,9.20497541942769,99.8611750813197,Khanom,TH801501,Khanom,TH8015,Nakhon Si Thammarat,TH80
+bus,Nakhon Si Thammarat,Nakhon Si Thammarat,8.4327951,99.9627967,Khlang,TH800103,Mueang Nakhon Si Thammarat,TH8001,Nakhon Si Thammarat,TH80
+bus,Pak Phanang District,Nakhon Si Thammarat,8.34700871312807,100.197415779214,Pak Phanang,TH801201,Pak Phanang,TH8012,Nakhon Si Thammarat,TH80
+bus,Sichon District,Nakhon Si Thammarat,9.00706892693471,99.9019003686354,Sichon,TH801401,Sichon,TH8014,Nakhon Si Thammarat,TH80
+bus,Tha Sala District,Nakhon Si Thammarat,8.66753468831684,99.9309048773301,Tha Sala,TH800801,Tha Sala,TH8008,Nakhon Si Thammarat,TH80
+bus,Thung Song District,Nakhon Si Thammarat,8.16493810619214,99.6808482156008,Pak Phraek,TH800901,Thung Song,TH8009,Nakhon Si Thammarat,TH80
+bus,Chiang Klang District,Nan,19.2929360890266,100.861867996066,Chiang Klang,TH550901,Chiang Klang,TH5509,Nan,TH55
+bus,Nan,Nan,18.7778874,100.773732,Nai Wiang,TH550101,Mueang Nan,TH5501,Nan,TH55
+bus,Pua District,Nan,19.1626711,100.9510293,Sila Laeng,TH550504,Pua,TH5505,Nan,TH55
+bus,Tha Wang Pha District,Nan,19.1219306563211,100.810896208051,Tha Wang Pha,TH550609,Tha Wang Pha,TH5506,Nan,TH55
+bus,Thung Chang District,Nan,19.466373292780176,100.91777089218171,Ngop,TH550802,Thung Chang,TH5508,Nan,TH55
+bus,Narathiwat,Narathiwat,6.4350352,101.8228923,Bang Nak,TH960101,Mueang Narathiwat,TH9601,Narathiwat,TH96
+bus,Sungai Kolok,Narathiwat,5.9771267,101.9466505,Kayu Khla,TH960802,Waeng,TH9608,Narathiwat,TH96
+bus,Tak Bai District,Narathiwat,6.25922146455579,102.055189111495,Che He,TH960201,Tak Bai,TH9602,Narathiwat,TH96
+bus,Na Klang District,Nong Bua Lam Phu,17.307375432976,102.188691619732,Na Klang,TH390201,Na Klang,TH3902,Nong Bua Lam Phu,TH39
+bus,Nong Bua Lamphu,Nong Bua Lam Phu,17.1984506,102.4572945,Nong Bua,TH390101,Mueang Nong Bua Lam Phu,TH3901,Nong Bua Lam Phu,TH39
+bus,Suwannakhuha District,Nong Bua Lam Phu,17.5661306572425,102.282597219437,Suwannakhuha,TH390506,Suwannakhuha,TH3905,Nong Bua Lam Phu,TH39
+bus,Nong Khai,Nong Khai,17.8825057,102.7482277,Nai Mueang,TH430101,Mueang Nong Khai,TH4301,Nong Khai,TH43
+bus,Sakhrai District,Nong Khai,17.6753878708102,102.750673249699,Sakhrai,TH431401,Sakhrai,TH4314,Nong Khai,TH43
+bus,Sangkhom District,Nong Khai,18.0642002324721,102.273457523494,Kaeng Kai,TH430801,Sangkhom,TH4308,Nong Khai,TH43
+bus,Si Chiang Mai District,Nong Khai,17.9564659251574,102.589556250057,Phan Phrao,TH430701,Si Chiang Mai,TH4307,Nong Khai,TH43
+bus,Tha Bo District,Nong Khai,17.84986349224,102.581035666095,Tha Bo,TH430201,Tha Bo,TH4302,Nong Khai,TH43
+bus,Bang Bua Thong District,Nonthaburi,13.9315373,100.391744440279,Bang Bua Thong,TH120402,Bang Bua Thong,TH1204,Nonthaburi,TH12
+bus,Nonthaburi,Nonthaburi,13.8428962,100.4937886,Suan Yai,TH120101,Mueang Nonthaburi,TH1201,Nonthaburi,TH12
+bus,Khlong Luang District,Pathum Thani,14.1033948,100.670345865522,Khlong Sam,TH130203,Khlong Luang,TH1302,Pathum Thani,TH13
+bus,Pathum Thani,Pathum Thani,14.0203964,100.5340426,Bang Prok,TH130101,Mueang Pathum Thani,TH1301,Pathum Thani,TH13
+bus,Thanyaburi District,Pathum Thani,14.0326433,100.772225803204,Lam Phak Kut,TH130304,Thanyaburi,TH1303,Pathum Thani,TH13
+bus,Pattani,Pattani,6.8676239,101.2498138,Sabarang,TH940101,Mueang Pattani,TH9401,Pattani,TH94
+bus,Sai Buri District,Pattani,6.70152076790138,101.617429891268,Talu Ban,TH940701,Sai Buri,TH9407,Pattani,TH94
+bus,Kalai,Phang Nga,8.3242996,98.4097966,Kalai,TH820403,Takua Thung,TH8204,Phangnga,TH82
+bus,Khao Lak,Phang Nga,8.61897374953614,98.2474670183396,Lam Kaen,TH820806,Thai Mueang,TH8208,Phangnga,TH82
+bus,Khok Kloi,Phang Nga,8.2773863,98.3075394,Khok Kloi,TH820406,Takua Thung,TH8204,Phangnga,TH82
+bus,Khura Buri District,Phang Nga,9.19346191095217,98.4153209631041,Khura,TH820601,Khura Buri,TH8206,Phangnga,TH82
+bus,Phang Nga,Phang Nga,8.4612037,98.5313023,Thai Chang,TH820101,Mueang Phangnga,TH8201,Phangnga,TH82
+bus,Takua Pa District,Phang Nga,8.8706532,98.3438194384102,Takua Pa,TH820501,Takua Pa,TH8205,Phangnga,TH82
+bus,Takua Thung District,Phang Nga,8.39222559851389,98.4518129179709,Krasom,TH820402,Takua Thung,TH8204,Phangnga,TH82
+bus,Thap Phut District,Phang Nga,8.51628788878242,98.6398277799843,Thap Put,TH820701,Thap Put,TH8207,Phangnga,TH82
+bus,Khuan Khanun District,Phatthalung,7.73538888970131,100.010249827464,Khuan Khanun,TH930501,Khuan Khanun,TH9305,Phatthalung,TH93
+bus,Pa Bon District,Phatthalung,7.2699814704569,100.17037806114,Wang Mai,TH930806,Pa Bon,TH9308,Phatthalung,TH93
+bus,Pa Phayom District,Phatthalung,7.83967707175001,99.9390286240545,Pa Phayom,TH931001,Pa Phayom,TH9310,Phatthalung,TH93
+bus,Phatthalung,Phatthalung,7.6209574,100.0857001,Khuha Sawan,TH930101,Mueang Phatthalung,TH9301,Phatthalung,TH93
+bus,Tamot District,Phatthalung,7.33976204272164,100.11121801656,Mae Khri,TH930401,Tamot,TH9304,Phatthalung,TH93
+bus,Chiang Kham District,Phayao,19.5238703,100.3019919,Yuan,TH560301,Chiang Kham,TH5603,Phayao,TH56
+bus,Phayao,Phayao,19.1666313,99.9019423,Wiang,TH560101,Mueang Phayao,TH5601,Phayao,TH56
+bus,Khao Kho District,Phetchabun,16.6336937,100.9981591,Khao Kho,TH671103,Khao Kho,TH6711,Phetchabun,TH67
+bus,Lom Sak District,Phetchabun,16.7596521,101.2131833,Nong Khwai,TH670315,Lom Sak,TH6703,Phetchabun,TH67
+bus,Phetchabun,Phetchabun,16.418027,101.1556825,Nai Mueang,TH670101,Mueang Phetchabun,TH6701,Phetchabun,TH67
+bus,Cha Am,Phetchaburi,12.7998336,99.9662102,Cha-Am,TH760401,Cha-Am,TH7604,Phetchaburi,TH76
+bus,Phetchaburi,Phetchaburi,13.1052914,99.9475297,Khlong Krachaeng,TH760102,Mueang Phetchaburi,TH7601,Phetchaburi,TH76
+bus,Hua Dong,Phichit,16.3392934,100.4031372,Hua Dong,TH660113,Mueang Phichit,TH6601,Phichit,TH66
+bus,Phichit,Phichit,16.4428085,100.3438228,Nai Mueang,TH660101,Mueang Phichit,TH6601,Phichit,TH66
+bus,Wachirabarami District,Phichit,16.5240935750224,100.144531170827,Ban Na,TH661201,Wachirabarami,TH6612,Phichit,TH66
+bus,Naresuan University,Phitsanulok,16.746551,100.195528,Tha Pho,TH650106,Mueang Phitsanulok,TH6501,Phitsanulok,TH65
+bus,Phitsanulok,Phitsanulok,16.8157611,100.2634423,Nai Mueang,TH650101,Mueang Phitsanulok,TH6501,Phitsanulok,TH65
+bus,Wang Thong District,Phitsanulok,16.8245975876503,100.428886359323,Wang Thong,TH650801,Wang Thong,TH6508,Phitsanulok,TH65
+bus,Den Chai District,Phrae,17.91890377571768,100.01767176317604,Sai Yoi,TH540503,Den Chai,TH5405,Phrae,TH54
+bus,Nong Muang Khai District,Phrae,18.2648082595612,100.189695737503,Nong Muang Khai,TH540802,Nong Muang Khai,TH5408,Phrae,TH54
+bus,Phrae,Phrae,18.14177,100.1425639,Nai Wiang,TH540101,Mueang Phrae,TH5401,Phrae,TH54
+bus,Song District,Phrae,18.4689964659656,100.182448200512,Ban Klang,TH540602,Song,TH5406,Phrae,TH54
+bus,Phuket,Phuket,7.8847901,98.3891503,Talat Yai,TH830101,Mueang Phuket,TH8301,Phuket,TH83
+bus,Rassada Pier,Phuket,7.8728704,98.4147833,Ratsada,TH830104,Mueang Phuket,TH8301,Phuket,TH83
+bus,Thalang District,Phuket,8.03176454151592,98.3340063282405,Thep Krasattri,TH830301,Thalang,TH8303,Phuket,TH83
+bus,Kabinburi District,Prachinburi,13.9463720854266,101.712780087342,Kabin,TH250201,Kabin Buri,TH2502,Prachin Buri,TH25
+bus,Prachinburi,Prachinburi,14.0541467,101.3724276,Na Mueang,TH250101,Mueang Prachin Buri,TH2501,Prachin Buri,TH25
+bus,Hua Hin,Prachuap Khiri Khan,12.5699326,99.9573437,Hua Hin,TH770701,Hua Hin,TH7707,Prachuap Khiri Khan,TH77
+bus,Kuiburi,Prachuap Khiri Khan,12.0229929,99.8884013,Bo Nok,TH770106,Mueang Prachuap Khiri Khan,TH7701,Prachuap Khiri Khan,TH77
+bus,Prachuap Khiri Khan,Prachuap Khiri Khan,11.8057688,99.7967271,Prachuap Khiri Khan,TH770101,Mueang Prachuap Khiri Khan,TH7701,Prachuap Khiri Khan,TH77
+bus,Pranburi,Prachuap Khiri Khan,12.38489545,99.996904946524,Pak Nam Pran,TH770604,Pran Buri,TH7706,Prachuap Khiri Khan,TH77
+bus,Kapoe District,Ranong,9.58545781481953,98.5960934022638,Kapoe,TH850302,Kapoe,TH8503,Ranong,TH85
+bus,Ranong,Ranong,9.964128,98.6340038,Khao Niwet,TH850101,Mueang Ranong,TH8501,Ranong,TH85
+bus,Ban Pong District,Ratchaburi,13.8108746166843,99.8731601031619,Ban Pong,TH700501,Ban Pong,TH7005,Ratchaburi,TH70
+bus,Ratchaburi,Ratchaburi,13.539067,99.8197035,Na Mueang,TH700101,Mueang Ratchaburi,TH7001,Ratchaburi,TH70
+bus,Ban Chang District,Rayong,12.728649265518,101.066364707968,Ban Chang,TH210203,Ban Chang,TH2102,Rayong,TH21
+bus,Ban Khai District,Rayong,12.7772633,101.2932446,Nong Lalok,TH210502,Ban Khai,TH2105,Rayong,TH21
+bus,Klaeng District,Rayong,12.7910733843177,101.634289428426,Thang Kwian,TH210301,Klaeng,TH2103,Rayong,TH21
+bus,Mapkha Intersection,Rayong,12.7735815248469,101.172565530976,Map Kha,TH210802,Nikhom Phatthana,TH2108,Rayong,TH21
+bus,Rayong,Rayong,12.6817905,101.277765,Tha Pradu,TH210101,Mueang Rayong,TH2101,Rayong,TH21
+bus,Royal Thai Navy (Rayong),Rayong,12.7013498388623,100.995410601938,Samnak Thon,TH210201,Ban Chang,TH2102,Rayong,TH21
+bus,Wang Chan District,Rayong,12.9350526677557,101.520121650802,Chum Saeng,TH210402,Wang Chan,TH2104,Rayong,TH21
+bus,Kaset Wisai District,Roi Et,15.657037342483,103.579869651397,Kaset Wisai,TH450201,Kaset Wisai,TH4502,Roi Et,TH45
+bus,Nong Phok District,Roi Et,16.3187121561898,104.204445943493,Nong Phok,TH450901,Nong Phok,TH4509,Roi Et,TH45
+bus,Pathum Rat District,Roi Et,15.6346325088774,103.342943450352,Bua Daeng,TH450301,Pathum Rat,TH4503,Roi Et,TH45
+bus,Phanom Phrai District,Roi Et,15.6783434481924,104.110161141951,Phanom Phrai,TH450601,Phanom Phrai,TH4506,Roi Et,TH45
+bus,Phon Thong District,Roi Et,16.3002687114872,103.978765768701,Waeng,TH450701,Phon Thong,TH4507,Roi Et,TH45
+bus,Roi Et,Roi Et,16.0568089,103.6514286,Nai Mueang,TH450101,Mueang Roi Et,TH4501,Roi Et,TH45
+bus,Aranyaprathet,Sa Kaeo,13.690903,102.5038168,Aranyaprathet,TH270601,Aranyaprathet,TH2706,Sa Kaeo,TH27
+bus,Rong Kluea (Sa Kaeo),Sa Kaeo,13.6677323,102.549662987782,Pa Rai,TH270606,Aranyaprathet,TH2706,Sa Kaeo,TH27
+bus,Sa Kaeo,Sa Kaeo,13.8194901,102.0702537,Sa Kaeo,TH270101,Mueang Sa Kaeo,TH2701,Sa Kaeo,TH27
+bus,Ban Muang District,Sakon Nakhon,17.8513271156585,103.570134678319,Muang,TH471001,Ban Muang,TH4710,Sakon Nakhon,TH47
+bus,Kham Ta Kla District,Sakon Nakhon,17.8494362270018,103.75478560993,Kham Ta Kla,TH470901,Kham Ta Kla,TH4709,Sakon Nakhon,TH47
+bus,Kusuman District,Sakon Nakhon,17.3322711450474,104.333849869003,Kusuman,TH470201,Kusuman,TH4702,Sakon Nakhon,TH47
+bus,Phang Khon District,Sakon Nakhon,17.3925555550241,103.709512446873,Phang Khon,TH470501,Phang Khon,TH4705,Sakon Nakhon,TH47
+bus,Phanna Nikhom District,Sakon Nakhon,17.3517619486801,103.846900337936,Phanna,TH470401,Phanna Nikhom,TH4704,Sakon Nakhon,TH47
+bus,Sakon Nakhon,Sakon Nakhon,17.1651224,104.1500731,That Choeng Chum,TH470101,Mueang Sakon Nakhon,TH4701,Sakon Nakhon,TH47
+bus,Sawang Daen Din District,Sakon Nakhon,17.47530985,103.457538465645,Sawang Daen Din,TH471201,Sawang Daen Din,TH4712,Sakon Nakhon,TH47
+bus,Wanon Niwat District,Sakon Nakhon,17.6322621559925,103.751794330717,Wanon Niwat,TH470801,Wanon Niwat,TH4708,Sakon Nakhon,TH47
+bus,Waritchaphum District,Sakon Nakhon,17.2931654230236,103.636359346733,Waritchaphum,TH470601,Waritchaphum,TH4706,Sakon Nakhon,TH47
+bus,Bang Bo District,Samut Prakan,13.58712995,100.870070117558,Ban Rakat,TH110202,Bang Bo,TH1102,Samut Prakan,TH11
+bus,Bang Phli District,Samut Prakan,13.61474015,100.722564860922,Bang Chalong,TH110304,Bang Phli,TH1103,Samut Prakan,TH11
+bus,Samut Prakan,Samut Prakan,13.5949486,100.5966707,Pak Nam,TH110101,Mueang Samut Prakan,TH1101,Samut Prakan,TH11
+bus,Samut Sakhon,Samut Sakhon,13.5497782,100.2742813,Mahachai,TH740101,Mueang Samut Sakhon,TH7401,Samut Sakhon,TH74
+bus,Samut Songkhram,Samut Songkhram,13.4086617,100.000494,Mae Klong,TH750101,Mueang Samut Songkhram,TH7501,Samut Songkhram,TH75
+bus,Chaloem Phra Kiat District,Saraburi,14.6115943586863,100.908389150518,Khao Din Phatthana,TH191301,Chaloem Phra Kiat,TH1913,Saraburi,TH19
+bus,Nong Khae District,Saraburi,14.368633385518812,100.86379994118904,Nong Khai Nam,TH190311,Nong Khae,TH1903,Saraburi,TH19
+bus,Phra Phutthabat District,Saraburi,14.7257608002549,100.79517755595,Khun Khlon,TH190902,Phra Phutthabat,TH1909,Saraburi,TH19
+bus,Rong Kluea Market (Saraburi),Saraburi,14.5168907497227,100.973517252597,Kut Nok Plao,TH190112,Mueang Saraburi,TH1901,Saraburi,TH19
+bus,Saraburi,Saraburi,14.5249471,100.9160757,Pak Phriao,TH190101,Mueang Saraburi,TH1901,Saraburi,TH19
+bus,Koh Lipe,Satun,6.4875909,99.3024656334183,Ko Sarai,TH910106,Mueang Satun,TH9101,Satun,TH91
+bus,Langu District,Satun,6.86404435857291,99.8025708845853,La-Ngu,TH910502,La-Ngu,TH9105,Satun,TH91
+bus,Pak Bara,Satun,6.8573129,99.72576,Pak Nam,TH910504,La-Ngu,TH9105,Satun,TH91
+bus,Satun,Satun,6.6151578,100.0664441,Phiman,TH910101,Mueang Satun,TH9101,Satun,TH91
+bus,Sing Buri,Sing Buri,14.8935284,100.3984227,Bang Phutsa,TH170101,Mueang Sing Buri,TH1701,Sing Buri,TH17
+bus,Huai Thap Than District,Sisaket,15.0511090500811,104.023250747285,Huai Thap Than,TH331201,Huai Thap Than,TH3312,Si Sa Ket,TH33
+bus,Kantharalak District,Sisaket,14.64141475,104.651165687942,Nam Om,TH330406,Kantharalak,TH3304,Si Sa Ket,TH33
+bus,Khukhan District,Sisaket,14.7138841327183,104.198438645072,Huai Nuea,TH330509,Khukhan,TH3305,Si Sa Ket,TH33
+bus,Sisaket,Sisaket,15.1144087,104.328868,Mueang Tai,TH330102,Mueang Si Sa Ket,TH3301,Si Sa Ket,TH33
+bus,Uthumphon Phisai District,Sisaket,15.11102115,104.139925577657,Kamphaeng,TH331001,Uthumphon Phisai,TH3310,Si Sa Ket,TH33
+bus,Yang Chum Noi District,Sisaket,15.2619628721455,104.400968653153,Yang Chum Noi,TH330201,Yang Chum Noi,TH3302,Si Sa Ket,TH33
+bus,Danok,Songkhla,6.5221759,100.4187064,Samnak Kham,TH901008,Sadao,TH9010,Songkhla,TH90
+bus,Hat Yai,Songkhla,7.0074644,100.4689889,Hat Yai,TH901101,Hat Yai,TH9011,Songkhla,TH90
+bus,Hat Yai Airport,Songkhla,6.929073,100.394799976891,Khlong La,TH901604,Khlong Hoi Khong,TH9016,Songkhla,TH90
+bus,Ranot District,Songkhla,7.76907118347691,100.32385523075,Ranot,TH900701,Ranot,TH9007,Songkhla,TH90
+bus,Rattaphum District,Songkhla,7.13499290728672,100.256419879775,Kamphaeng Phet,TH900901,Rattaphum,TH9009,Songkhla,TH90
+bus,Sadao District,Songkhla,6.63873230865835,100.423781592346,Sadao,TH901001,Sadao,TH9010,Songkhla,TH90
+bus,Sathing Phra District,Songkhla,7.47290977974465,100.43900694279,Chathing Phra,TH900201,Sathing Phra,TH9002,Songkhla,TH90
+bus,Songkhla,Songkhla,7.1973429,100.593205,Bo Yang,TH900101,Mueang Songkhla,TH9001,Songkhla,TH90
+bus,Ban Dan Lan Hoi District,Sukhothai,17.0063630248578,99.5747313601008,Lan Hoi,TH640201,Ban Dan Lan Hoi,TH6402,Sukhothai,TH64
+bus,Sawankhalok,Sukhothai,17.3146749,99.8323192,Mueang Sawankhalok,TH640701,Sawankhalok,TH6407,Sukhothai,TH64
+bus,Si Satchanalai District,Sukhothai,17.5175823181993,99.7603602464297,Hat Siao,TH640501,Si Satchanalai,TH6405,Sukhothai,TH64
+bus,Sukhothai,Sukhothai,17.010918,99.8203682,Thani,TH640101,Mueang Sukhothai,TH6401,Sukhothai,TH64
+bus,Ban Ta Khun District,Surat Thani,8.90417340833653,98.8844677247728,Khao Wong,TH840901,Ban Ta Khun,TH8409,Surat Thani,TH84
+bus,Chaiya,Surat Thani,9.388465,99.1953268,Talat Chaiya,TH840601,Chaiya,TH8406,Surat Thani,TH84
+bus,Donsak,Surat Thani,9.322719,99.741174,Don Sak,TH840301,Don Sak,TH8403,Surat Thani,TH84
+bus,Donsak Pier,Surat Thani,9.322719,99.741174,Don Sak,TH840301,Don Sak,TH8403,Surat Thani,TH84
+bus,Kanchanadit District,Surat Thani,9.16577472770231,99.4710298509795,Kadae,TH840203,Kanchanadit,TH8402,Surat Thani,TH84
+bus,Khao Sok,Surat Thani,9.0686984,98.5740588052426,Khao Phang,TH840904,Ban Ta Khun,TH8409,Surat Thani,TH84
+bus,Koh Phangan,Surat Thani,9.7349503,100.030571084521,Ban Tai,TH840502,Ko Pha-Ngan,TH8405,Surat Thani,TH84
+bus,Koh Samui,Surat Thani,9.50139445,99.9956192732,Na Mueang,TH840404,Ko Samui,TH8404,Surat Thani,TH84
+bus,Koh Tao,Surat Thani,10.0921822,99.8395361756215,Ko Tao,TH840503,Ko Pha-Ngan,TH8405,Surat Thani,TH84
+bus,Maenam Pier,Surat Thani,9.58179,99.98034,Maenam,TH840407,Ko Samui,TH8404,Surat Thani,TH84
+bus,Nathon Pier,Surat Thani,9.53869,99.94548,Ang Thong,TH840401,Ko Samui,TH8404,Surat Thani,TH84
+bus,Pha Ngan,Surat Thani,9.7349503,100.030571084521,Ban Tai,TH840502,Ko Pha-Ngan,TH8405,Surat Thani,TH84
+bus,Phanom District,Surat Thani,8.85552526309189,98.8125384403872,Phanom,TH841001,Phanom,TH8410,Surat Thani,TH84
+bus,Raja Ferry Donsak Pier,Surat Thani,9.322719,99.741174,Don Sak,TH840301,Don Sak,TH8403,Surat Thani,TH84
+bus,Ratchaprapha Dam,Surat Thani,8.9721349,98.8057812229903,Khao Phang,TH840904,Ban Ta Khun,TH8409,Surat Thani,TH84
+bus,Surat Thani,Surat Thani,9.1404136,99.3241347,Talat,TH840101,Mueang Surat Thani,TH8401,Surat Thani,TH84
+bus,Thong Sala Pier,Surat Thani,9.72891,99.99824,Ko Pha-Ngan,TH840501,Ko Pha-Ngan,TH8405,Surat Thani,TH84
+bus,Kap Choeng District,Surin,14.4750586047401,103.59439188307,Kap Choeng,TH320601,Kap Choeng,TH3206,Surin,TH32
+bus,Phanom Dong Rak District,Surin,14.4458103780058,103.304705511839,Chik Daek,TH321403,Phanom Dong Rak,TH3214,Surin,TH32
+bus,Prasat District,Surin,14.8883025,103.6516095,Mueang Thi,TH320119,Mueang Surin,TH3201,Surin,TH32
+bus,Rattanaburi,Surin,15.320081,103.8522569,Rattanaburi,TH320701,Rattanaburi,TH3207,Surin,TH32
+bus,Samrong Thap District,Surin,15.0230483586615,103.936171740725,Nong Phai Lom,TH321202,Samrong Thap,TH3212,Surin,TH32
+bus,Sangkha District,Surin,14.6361769137637,103.852927473454,Sangkha,TH321001,Sangkha,TH3210,Surin,TH32
+bus,Sanom,Surin,15.2052563,103.7617924,Sanom,TH320801,Sanom,TH3208,Surin,TH32
+bus,Sikhoraphum District,Surin,14.9468018735658,103.791750891616,Ra-Ngaeng,TH320901,Sikhoraphum,TH3209,Surin,TH32
+bus,Surin,Surin,14.8832452,103.4906845,Nai Mueang,TH320101,Mueang Surin,TH3201,Surin,TH32
+bus,Tha Tum District,Surin,15.3188378793268,103.675243185241,Tha Tum,TH320301,Tha Tum,TH3203,Surin,TH32
+bus,Ban Tak District,Tak,17.10955272887094,99.07569647884264,Tak Ok,TH630201,Ban Tak,TH6302,Tak,TH63
+bus,Mae Sot District,Tak,16.748103845290654,98.71131487747634,Phawo,TH630603,Mae Sot,TH6306,Tak,TH63
+bus,Sam Ngao District,Tak,17.400480405943153,98.80692977054119,Ban Na,TH630305,Sam Ngao,TH6303,Tak,TH63
+bus,Tak,Tak,16.8722576,99.1248355,Rahaeng,TH630101,Mueang Tak,TH6301,Tak,TH63
+bus,Wang Chao District,Tak,16.7043147175555,99.2429990902136,Chiang Thong,TH630901,Wang Chao,TH6309,Tak,TH63
+bus,Thung Yao,Trang,7.2087275,99.7204557,Thung Yao,TH920402,Palian,TH9204,Trang,TH92
+bus,Trang,Trang,7.5557778,99.6076502,Thap Thiang,TH920101,Mueang Trang,TH9201,Trang,TH92
+bus,Yan Ta Khao District,Trang,7.3860270580899,99.6672073411588,Yan Ta Khao,TH920301,Yan Ta Khao,TH9203,Trang,TH92
+bus,Khao Saming District,Trat,12.3537959879869,102.435048860935,Khao Saming,TH230301,Khao Saming,TH2303,Trat,TH23
+bus,Koh Chang,Trat,12.0546168,102.337342598722,Ko Chang,TH230701,Ko Chang,TH2307,Trat,TH23
+bus,Koh Kood,Trat,11.6621551,102.56810535674,Ko Kut,TH230602,Ko Kut,TH2306,Trat,TH23
+bus,Koh Mak,Trat,11.81597515,102.491884755787,Ko Mak,TH230601,Ko Kut,TH2306,Trat,TH23
+bus,Laem Ngop District,Trat,12.1728984728598,102.393886840503,Laem Ngop,TH230501,Laem Ngop,TH2305,Trat,TH23
+bus,Laem Sok Pier,Trat,12.07065,102.56318,Ao Yai,TH230106,Mueang Trat,TH2301,Trat,TH23
+bus,Trat,Trat,12.2440564,102.5122822,Bang Phra,TH230101,Mueang Trat,TH2301,Trat,TH23
+bus,Trat Airport,Trat,12.2808021,102.3236367,Tha Som,TH230304,Khao Saming,TH2303,Trat,TH23
+bus,Buntharik District,Ubon Ratchathani,14.755393781088,105.411899140728,Phon Ngam,TH341001,Buntharik,TH3410,Ubon Ratchathani,TH34
+bus,Det Udom District,Ubon Ratchathani,14.795363867154,104.811417753628,Thung Thoeng,TH340706,Det Udom,TH3407,Ubon Ratchathani,TH34
+bus,Khemmarat District,Ubon Ratchathani,16.0411992039227,105.206481107405,Khemarat,TH340501,Khemarat,TH3405,Ubon Ratchathani,TH34
+bus,Khong Chiam District,Ubon Ratchathani,15.3149049,105.5004537,Khong Chiam,TH340301,Khong Chiam,TH3403,Ubon Ratchathani,TH34
+bus,Khueang Nai District,Ubon Ratchathani,15.3897820128675,104.551292124779,Khueang Nai,TH340401,Khueang Nai,TH3404,Ubon Ratchathani,TH34
+bus,Muang Sam Sip District,Ubon Ratchathani,15.5106272062622,104.726184701585,Muang Sam Sip,TH341401,Muang Sam Sip,TH3414,Ubon Ratchathani,TH34
+bus,Na Chaluai District,Ubon Ratchathani,14.520260485846,105.253232400206,Na Chaluai,TH340801,Na Chaluai,TH3408,Ubon Ratchathani,TH34
+bus,Na Tan District,Ubon Ratchathani,15.8972170110021,105.266021858084,Muang Yai,TH342102,Pho Sai,TH3421,Ubon Ratchathani,TH34
+bus,Nam Yuen District,Ubon Ratchathani,14.4277714844304,105.030596979123,Dom Pradit,TH340904,Nam Yuen,TH3409,Ubon Ratchathani,TH34
+bus,Pho Sai District,Ubon Ratchathani,15.8260782726591,105.260802719762,Pho Sai,TH342101,Pho Sai,TH3421,Ubon Ratchathani,TH34
+bus,Si Mueang Mai District,Ubon Ratchathani,15.4951174713148,105.278616169507,Na Kham,TH340201,Si Mueang Mai,TH3402,Ubon Ratchathani,TH34
+bus,Sirindhorn District,Ubon Ratchathani,15.2016664,105.3982374,Nikhom Sang Ton-Eng Lam Dom Noi,TH342504,Sirindhorn,TH3425,Ubon Ratchathani,TH34
+bus,Trakan Phuet Phon District,Ubon Ratchathani,15.6123984505948,105.02179837577,Khulu,TH341101,Trakan Phuet Phon,TH3411,Ubon Ratchathani,TH34
+bus,Ubon Ratchathani,Ubon Ratchathani,15.2274235,104.8589462,Nai Mueang,TH340101,Mueang Ubon Ratchathani,TH3401,Ubon Ratchathani,TH34
+bus,Warin Chamrap District,Ubon Ratchathani,15.2024469,104.8676705,Warin Chamrap,TH341501,Warin Chamrap,TH3415,Ubon Ratchathani,TH34
+bus,Ban Phue District,Udon Thani,17.676823168896686,102.44438803563492,Ban Phue,TH411701,Ban Phue,TH4117,Udon Thani,TH41
+bus,Kumphawapi District,Udon Thani,17.1139352476303,103.018672813624,Kumphawapi,TH410415,Kumphawapi,TH4104,Udon Thani,TH41
+bus,Non Saat District,Udon Thani,16.9627858762553,102.892988630661,Non Sa-At,TH410501,Non Sa-At,TH4105,Udon Thani,TH41
+bus,Nong Han District,Udon Thani,17.3607006,103.1055607,Nong Han,TH410601,Nong Han,TH4106,Udon Thani,TH41
+bus,Phen District,Udon Thani,17.6953523621193,102.90732905888,Phen,TH411901,Phen,TH4119,Udon Thani,TH41
+bus,Si That District,Udon Thani,16.9744807649219,103.21672232798,Si That,TH410901,Si That,TH4109,Udon Thani,TH41
+bus,Udon Thani,Udon Thani,17.4082448,102.7868105,Mak Khaeng,TH410101,Mueang Udon Thani,TH4101,Udon Thani,TH41
+bus,Wang Sam Mo District,Udon Thani,16.9487261326186,103.428782700329,Wang Sam Mo,TH411006,Wang Sam Mo,TH4110,Udon Thani,TH41
+bus,Tron,Uttaradit,17.4843685,100.1098429,Wang Daeng,TH530201,Tron,TH5302,Uttaradit,TH53
+bus,Uttaradit,Uttaradit,17.6217255,100.0981816,Tha It,TH530101,Mueang Uttaradit,TH5301,Uttaradit,TH53
+bus,Yala,Yala,6.5567245,101.2902517,Sateng,TH950101,Mueang Yala,TH9501,Yala,TH95
+bus,Kut Chum District,Yasothon,16.0329025385485,104.338529169953,Kut Chum,TH350301,Kut Chum,TH3503,Yasothon,TH35
+bus,Loeng Nok Tha District,Yasothon,16.204010453498174,104.52287396053076,Sawat,TH350803,Loeng Nok Tha,TH3508,Yasothon,TH35
+bus,Maha Chana Chai District,Yasothon,15.5325783181412,104.24227760768,Fa Yat,TH350601,Maha Chana Chai,TH3506,Yasothon,TH35
+bus,Pa Tio District,Yasothon,15.8315161311188,104.385506606073,Pho Sai,TH350501,Pa Tio,TH3505,Yasothon,TH35
+bus,Phu Koi,Yasothon,16.1197067,104.445872475058,Thai Charoen,TH350901,Thai Charoen,TH3509,Yasothon,TH35
+bus,Sai Mun District,Yasothon,15.982934560867093,104.196053085577,Du Lat,TH350202,Sai Mun,TH3502,Yasothon,TH35
+bus,Thai Charoen District,Yasothon,16.0633688417742,104.44734514096,Thai Charoen,TH350901,Thai Charoen,TH3509,Yasothon,TH35
+bus,Yasothon,Yasothon,15.7926751,104.1452903,Nai Mueang,TH350101,Mueang Yasothon,TH3501,Yasothon,TH35
+bus,Ang Thong,Ang Thong,14.5924644,100.4513754,Bang Kaeo,TH150102,Mueang Ang Thong,TH1501,Ang Thong,TH15
+bus,Mae Phrik District,Lampang,17.4496318,99.1224016,Mae Phrik,TH520901,Mae Phrik,TH5209,Lampang,TH52
+bus,Sop Prap District,Lampang,17.88083995,99.33714165,Sop Prap,TH521101,Sop Prap,TH5211,Lampang,TH52
+bus,Wat Thammachariya,Ayutthaya,14.2535992665334,100.732345367326,Chamaep,TH141110,Wang Noi,TH1411,Phra Nakhon Si Ayutthaya,TH14
+bus,Khu Mueang District,Buriram,15.2715934186208,103.001473248162,Khu Mueang,TH310201,Khu Mueang,TH3102,Buri Ram,TH31
+bus,Nong Ki,Buriram,14.6849229,102.5397682,Thung Kraten,TH310507,Nong Ki,TH3105,Buri Ram,TH31
+bus,Hot District,Chiang Mai,18.1941436,98.6129654,Hang Dong,TH501601,Hot,TH5016,Chiang Mai,TH50
+bus,Pathio District,Chumphon,10.7095104864296,99.3187229395891,Bang Son,TH860301,Pathio,TH8603,Chumphon,TH86
+bus,Sangkhla Buri District,Kanchanaburi,15.1555049,98.4532587,Nong Lu,TH710801,Sangkhla Buri,TH7108,Kanchanaburi,TH71
+bus,Thong Pha Phum District,Kanchanaburi,14.7460471497638,98.625246711061,Tha Khanun,TH710701,Thong Pha Phum,TH7107,Kanchanaburi,TH71
+bus,Baan Non Rang,Khon Kaen,16.5441738030359,102.686004686286,Sawathi,TH400108,Mueang Khon Kaen,TH4001,Khon Kaen,TH40
+bus,Nam Phong District,Khon Kaen,16.7019305,102.8564343,Wang Chai,TH400702,Nam Phong,TH4007,Khon Kaen,TH40
+bus,Lam Thap District,Krabi,8.07241076815096,99.2919146825828,Lam Thap,TH810701,Lam Thap,TH8107,Krabi,TH81
+bus,Hang Chat District,Lampang,18.3198636,99.31349895,Wiang Tan,TH521205,Hang Chat,TH5212,Lampang,TH52
+bus,Chiang Yuen,Maha Sarakham,16.409836,103.0980553,Chiang Yuen,TH440501,Chiang Yuen,TH4405,Maha Sarakham,TH44
+bus,Ban Na District,Nakhon Nayok,14.2608019901134,101.067194487912,Ban Na,TH260301,Ban Na,TH2603,Nakhon Nayok,TH26
+bus,Nakhon Nayok,Nakhon Nayok,14.203647,101.2147087,Nakhon Nayok,TH260101,Mueang Nakhon Nayok,TH2601,Nakhon Nayok,TH26
+bus,Chum Phuang District,Nakhon Ratchasima,15.3407,102.746073,Chum Phuang,TH301701,Chum Phuang,TH3017,Nakhon Ratchasima,TH30
+bus,Takhli District,Nakhon Sawan,15.2632217124788,100.343156136309,Takhli,TH600701,Takhli,TH6007,Nakhon Sawan,TH60
+bus,Khlong Leng Intersection,Nakhon Si Thammarat,8.4349156750478,99.9668779646712,Khlang,TH800103,Mueang Nakhon Si Thammarat,TH8001,Nakhon Si Thammarat,TH80
+bus,Fao Rai District,Nong Khai,18.01906442648,103.303718391233,Fao Rai,TH431501,Fao Rai,TH4315,Nong Khai,TH43
+bus,Rattanawapi District,Nong Khai,18.2203610254843,103.180343896993,Rattanawapi,TH431601,Rattanawapi,TH4316,Nong Khai,TH43
+bus,Lam Kaen,Phang Nga,8.5934565,98.256744,Lam Kaen,TH820806,Thai Mueang,TH8208,Phangnga,TH82
+bus,Khao Chaison District,Phatthalung,7.46108641843307,100.13327862138,Khao Chaison,TH930301,Khao Chaison,TH9303,Phatthalung,TH93
+bus,Chiang Muan District,Phayao,18.8866727592279,100.303856323421,Chiang Muan,TH560401,Chiang Muan,TH5604,Phayao,TH56
+bus,Bueng Sam Phan,Phetchabun,15.7834857,101.0062866,Bueng Sam Phan,TH670809,Bueng Sam Phan,TH6708,Phetchabun,TH67
+bus,Sri Thep,Phetchabun,15.4718584250176,101.14546639369,Si Thep,TH670601,Si Thep,TH6706,Phetchabun,TH67
+bus,Nong Ya Plong District,Phetchaburi,13.128528735747578,99.4745629175145,Yang Nam Klat Nuea,TH760302,Nong Ya Plong,TH7603,Phetchaburi,TH76
+bus,Wang Sai Phun,Phichit,16.4063966,100.5340431,Wang Sai Phun,TH660201,Wang Sai Phun,TH6602,Phichit,TH66
+bus,Bang Krathum,Phitsanulok,16.5766834,100.2990041,Bang Krathum,TH650501,Bang Krathum,TH6505,Phitsanulok,TH65
+bus,Nong Phra,Phitsanulok,16.6741466,100.4366978,Nong Phra,TH650809,Wang Thong,TH6508,Phitsanulok,TH65
+bus,Wat Ta Yom,Phitsanulok,16.5912308,100.442033558236,Wat Ta Yom,TH650509,Bang Krathum,TH6505,Phitsanulok,TH65
+bus,Bang Saphan District,Prachuap Khiri Khan,11.2109182,99.5094669,Kamnoet Nopphakhun,TH770401,Bang Saphan,TH7704,Prachuap Khiri Khan,TH77
+bus,Khao Pho Highway,Prachuap Khiri Khan,11.7586498647785,99.7726510441044,Khlong Wan,TH770103,Mueang Prachuap Khiri Khan,TH7701,Prachuap Khiri Khan,TH77
+bus,Sam Roi Yot District,Prachuap Khiri Khan,12.2708737377147,99.8719276116142,Sila Loi,TH770802,Sam Roi Yot,TH7708,Prachuap Khiri Khan,TH77
+bus,Thap Sakae District,Prachuap Khiri Khan,11.4996766,99.622149,Thap Sakae,TH770301,Thap Sakae,TH7703,Prachuap Khiri Khan,TH77
+bus,Pak Tho,Ratchaburi,13.3746958,99.8435355,Pak Tho,TH700805,Pak Tho,TH7008,Ratchaburi,TH70
+bus,Wang Manao,Ratchaburi,13.3334438,99.8396017,Wang Manao,TH700802,Pak Tho,TH7008,Ratchaburi,TH70
+bus,Pluak Daeng District,Rayong,12.9723604245369,101.215641231264,Pluak Daeng,TH210601,Pluak Daeng,TH2106,Rayong,TH21
+bus,Suwannaphum,Roi Et,15.5995028,103.7982162,Sa Khu,TH451101,Suwannaphum,TH4511,Roi Et,TH45
+bus,Phu Phan,Sakon Nakhon,16.99569165,103.83756494951,Khok Phu,TH471803,Phu Phan,TH4718,Sakon Nakhon,TH47
+bus,Tha Phae District,Satun,6.80075222635017,99.91931370731017,Tha Ruea,TH910404,Tha Phae,TH9104,Satun,TH91
+bus,Thung Wa District,Satun,7.09027381447322,99.767870388181,Thung Wa,TH910601,Thung Wa,TH9106,Satun,TH91
+bus,Kanthararom District,Sisaket,15.1030219,104.5711112,Dun,TH330301,Kanthararom,TH3303,Si Sa Ket,TH33
+bus,Kut Salao,Sisaket,14.6940847139974,104.836943502976,Kut Salao,TH330402,Kantharalak,TH3304,Si Sa Ket,TH33
+bus,Prang Ku District,Sisaket,14.85766860882,104.039366327228,Phimai,TH330701,Prang Ku,TH3307,Si Sa Ket,TH33
+bus,Chana District,Songkhla,6.8979651949557175,100.70370602490928,Na Wa,TH900305,Chana,TH9003,Songkhla,TH90
+bus,Na Thap Intersection,Songkhla,7.02135918282037,100.696743437933,Na Thap,TH900306,Chana,TH9003,Songkhla,TH90
+bus,Singhanakhon District,Songkhla,7.18753818171107,100.592684317288,Bo Yang,TH900101,Mueang Songkhla,TH9001,Songkhla,TH90
+bus,Suphan Buri,Suphan Buri,14.4699051,100.1164984,Tha Phi Liang,TH720101,Mueang Suphan Buri,TH7201,Suphan Buri,TH72
+bus,Chumphon Buri,Surin,15.3462076,103.3932914,Chumphon Buri,TH320201,Chumphon Buri,TH3202,Surin,TH32
+bus,Palian District,Trang,7.24555182531663,99.7236462643625,Suso,TH920409,Palian,TH9204,Trang,TH92
+bus,Na Charoen,Ubon Ratchathani,15.1662881,105.3239975,Don Chik,TH341904,Phibun Mangsahan,TH3419,Ubon Ratchathani,TH34
+bus,Phibun Mangsahan District,Ubon Ratchathani,15.2444067195312,105.228963837043,Phibun,TH341901,Phibun Mangsahan,TH3419,Ubon Ratchathani,TH34
+bus,Sawang Wirawong District,Ubon Ratchathani,15.241412,105.0933158,Sawang,TH343204,Sawang Wirawong,TH3432,Ubon Ratchathani,TH34
+bus,Ban Dung District,Udon Thani,17.665127,103.2879862,Phon Sung,TH411104,Ban Dung,TH4111,Udon Thani,TH41
+bus,Na Yung District,Udon Thani,17.8979544659436,102.150329838368,Ban Kong,TH412202,Na Yung,TH4122,Udon Thani,TH41
+bus,Uthai Thani,Uthai Thani,15.3824774,100.0277754,Uthai Mai,TH610101,Mueang Uthai Thani,TH6101,Uthai Thani,TH61
+bus,Kosum Phisai District,Maha Sarakham,16.24862725,103.067071694018,Hua Khwang,TH440301,Kosum Phisai,TH4403,Maha Sarakham,TH44
+bus,Banphot Phisai District,Nakhon Sawan,15.9362218842293,99.9822974789372,Tha Ngio,TH600501,Banphot Phisai,TH6005,Nakhon Sawan,TH60
+bus,Cho Waterfall,Surat Thani,9.26128448424305,99.7691811905816,Don Sak,TH840301,Don Sak,TH8403,Surat Thani,TH84
+bus,Bang Yai District,Nonthaburi,13.8645809,100.362509281142,Ban Mai,TH120306,Bang Yai,TH1203,Nonthaburi,TH12
+bus,Mae Sai,Chiang Rai,20.4397711,99.8829694,Mae Sai,TH570901,Mae Sai,TH5709,Chiang Rai,TH57
+train,Ayutthaya,Ayutthaya,14.3535427,100.5645684,Pratu Chai,TH140101,Phra Nakhon Si Ayutthaya,TH1401,Phra Nakhon Si Ayutthaya,TH14
+train,Bangkok,Bangkok,13.7263392,100.5086736,Khlong Ton Sai,TH101804,Khlong San,TH1018,Bangkok,TH10
+train,Don Mueang,Bangkok,13.9226541,100.6009966,Don Mueang,TH103604,Don Mueang,TH1036,Bangkok,TH10
+train,Rangsit,Bangkok,13.7993876507123,100.564014723883,Chomphon,TH103004,Chatuchak,TH1030,Bangkok,TH10
+train,Buriram,Buriram,14.9955693,103.1079187,Nai Mueang,TH310101,Mueang Buri Ram,TH3101,Buri Ram,TH31
+train,Chiang Mai,Chiang Mai,18.7882778,98.9858802,Phra Sing,TH500102,Mueang Chiang Mai,TH5001,Chiang Mai,TH50
+train,Chumphon,Chumphon,10.4961355,99.1778731,Tha Taphao,TH860101,Mueang Chumphon,TH8601,Chumphon,TH86
+train,Khon Kaen,Khon Kaen,16.4303916,102.8355904,Nai Mueang,TH400101,Mueang Khon Kaen,TH4001,Khon Kaen,TH40
+train,Lampang,Lampang,18.2899489,99.4958526,Suan Dok,TH520103,Mueang Lampang,TH5201,Lampang,TH52
+train,Lamphun,Lamphun,18.5776383,99.0069034,Nai Mueang,TH510101,Mueang Lamphun,TH5101,Lamphun,TH51
+train,Lopburi,Lopburi,14.8023289,100.6146858,Thale Chup Son,TH160101,Mueang Lop Buri,TH1601,Lop Buri,TH16
+train,Korat,Nakhon Ratchasima,14.9747339,102.0981161,Nai Mueang,TH300101,Mueang Nakhon Ratchasima,TH3001,Nakhon Ratchasima,TH30
+train,Nakhon Ratchasima,Nakhon Ratchasima,14.9747339,102.0981161,Nai Mueang,TH300101,Mueang Nakhon Ratchasima,TH3001,Nakhon Ratchasima,TH30
+train,Nakhon Sawan,Nakhon Sawan,15.705783,100.1330046,Pak Nam Pho,TH600101,Mueang Nakhon Sawan,TH6001,Nakhon Sawan,TH60
+train,Nakhon Si Thammarat,Nakhon Si Thammarat,8.4327951,99.9627967,Khlang,TH800103,Mueang Nakhon Si Thammarat,TH8001,Nakhon Si Thammarat,TH80
+train,Nong Khai,Nong Khai,17.8825057,102.7482277,Nai Mueang,TH430101,Mueang Nong Khai,TH4301,Nong Khai,TH43
+train,Khlong Luang District,Pathum Thani,14.1033948,100.670345865522,Khlong Sam,TH130203,Khlong Luang,TH1302,Pathum Thani,TH13
+train,Pathum Thani,Pathum Thani,14.0203964,100.5340426,Bang Prok,TH130101,Mueang Pathum Thani,TH1301,Pathum Thani,TH13
+train,Pattani,Pattani,6.8676239,101.2498138,Sabarang,TH940101,Mueang Pattani,TH9401,Pattani,TH94
+train,Phetchaburi,Phetchaburi,13.1052914,99.9475297,Khlong Krachaeng,TH760102,Mueang Phetchaburi,TH7601,Phetchaburi,TH76
+train,Phichit,Phichit,16.4428085,100.3438228,Nai Mueang,TH660101,Mueang Phichit,TH6601,Phichit,TH66
+train,Phitsanulok,Phitsanulok,16.8157611,100.2634423,Nai Mueang,TH650101,Mueang Phitsanulok,TH6501,Phitsanulok,TH65
+train,Hua Hin,Prachuap Khiri Khan,12.5699326,99.9573437,Hua Hin,TH770701,Hua Hin,TH7707,Prachuap Khiri Khan,TH77
+train,Prachuap Khiri Khan,Prachuap Khiri Khan,11.8057688,99.7967271,Prachuap Khiri Khan,TH770101,Mueang Prachuap Khiri Khan,TH7701,Prachuap Khiri Khan,TH77
+train,Pranburi,Prachuap Khiri Khan,12.38489545,99.996904946524,Pak Nam Pran,TH770604,Pran Buri,TH7706,Prachuap Khiri Khan,TH77
+train,Ratchaburi,Ratchaburi,13.539067,99.8197035,Na Mueang,TH700101,Mueang Ratchaburi,TH7001,Ratchaburi,TH70
+train,Saraburi,Saraburi,14.5249471,100.9160757,Pak Phriao,TH190101,Mueang Saraburi,TH1901,Saraburi,TH19
+train,Sisaket,Sisaket,15.1144087,104.328868,Mueang Tai,TH330102,Mueang Si Sa Ket,TH3301,Si Sa Ket,TH33
+train,Hat Yai,Songkhla,7.0074644,100.4689889,Hat Yai,TH901101,Hat Yai,TH9011,Songkhla,TH90
+train,Songkhla,Songkhla,7.1973429,100.593205,Bo Yang,TH900101,Mueang Songkhla,TH9001,Songkhla,TH90
+train,Chaiya,Surat Thani,9.388465,99.1953268,Talat Chaiya,TH840601,Chaiya,TH8406,Surat Thani,TH84
+train,Surat Thani,Surat Thani,9.1404136,99.3241347,Talat,TH840101,Mueang Surat Thani,TH8401,Surat Thani,TH84
+train,Surin,Surin,14.8832452,103.4906845,Nai Mueang,TH320101,Mueang Surin,TH3201,Surin,TH32
+train,Trang,Trang,7.5557778,99.6076502,Thap Thiang,TH920101,Mueang Trang,TH9201,Trang,TH92
+train,Ubon Ratchathani,Ubon Ratchathani,15.2274235,104.8589462,Nai Mueang,TH340101,Mueang Ubon Ratchathani,TH3401,Ubon Ratchathani,TH34
+train,Udon Thani,Udon Thani,17.4082448,102.7868105,Mak Khaeng,TH410101,Mueang Udon Thani,TH4101,Udon Thani,TH41
+train,Uttaradit,Uttaradit,17.6217255,100.0981816,Tha It,TH530101,Mueang Uttaradit,TH5301,Uttaradit,TH53
+train,Yala,Yala,6.5567245,101.2902517,Sateng,TH950101,Mueang Yala,TH9501,Yala,TH95
+ferry,Bangkok,Bangkok,13.7263392,100.5086736,Khlong Ton Sai,TH101804,Khlong San,TH1018,Bangkok,TH10
+ferry,Suvarnabhumi Airport,Bangkok,13.7227587,100.7272056513,Lat Krabang,TH101101,Lat Krabang,TH1011,Bangkok,TH10
+ferry,Bang Lamung District,Chonburi,12.91607,100.88526,Nong Prue,TH200402,Bang Lamung,TH2004,Chon Buri,TH20
+ferry,Chonburi,Chonburi,13.3662087,100.9872185,Bang Pla Soi,TH200101,Mueang Chon Buri,TH2001,Chon Buri,TH20
+ferry,Pattaya,Chonburi,12.9366924,100.8865002,Nong Prue,TH200402,Bang Lamung,TH2004,Chon Buri,TH20
+ferry,Chumphon,Chumphon,10.4961355,99.1778731,Tha Taphao,TH860101,Mueang Chumphon,TH8601,Chumphon,TH86
+ferry,Ao Nang,Krabi,7.72117335,98.7655426259269,Ao Nang,TH810116,Mueang Krabi,TH8101,Krabi,TH81
+ferry,Koh Lanta,Krabi,7.681856,99.089877,Ko Lanta Noi,TH810302,Ko Lanta,TH8103,Krabi,TH81
+ferry,Koh Phi Phi,Krabi,7.7522403,98.7766433666743,Ao Nang,TH810116,Mueang Krabi,TH8101,Krabi,TH81
+ferry,Krabi,Krabi,8.0634637,98.9162345,Pak Nam,TH810101,Mueang Krabi,TH8101,Krabi,TH81
+ferry,Phuket,Phuket,7.8847901,98.3891503,Talat Yai,TH830101,Mueang Phuket,TH8301,Phuket,TH83
+ferry,Rassada Pier,Phuket,7.8728704,98.4147833,Ratsada,TH830104,Mueang Phuket,TH8301,Phuket,TH83
+ferry,Koh Samet,Rayong,12.552308,101.448284131309,Phe,TH210105,Mueang Rayong,TH2101,Rayong,TH21
+ferry,Rayong,Rayong,12.6817905,101.277765,Tha Pradu,TH210101,Mueang Rayong,TH2101,Rayong,TH21
+ferry,Bang Phli District,Samut Prakan,13.61474015,100.722564860922,Bang Chalong,TH110304,Bang Phli,TH1103,Samut Prakan,TH11
+ferry,Samut Prakan,Samut Prakan,13.5949486,100.5966707,Pak Nam,TH110101,Mueang Samut Prakan,TH1101,Samut Prakan,TH11
+ferry,Koh Lipe,Satun,6.4875909,99.3024656334183,Ko Sarai,TH910106,Mueang Satun,TH9101,Satun,TH91
+ferry,Pak Bara,Satun,6.8573129,99.72576,Pak Nam,TH910504,La-Ngu,TH9105,Satun,TH91
+ferry,Satun,Satun,6.6151578,100.0664441,Phiman,TH910101,Mueang Satun,TH9101,Satun,TH91
+ferry,Donsak,Surat Thani,9.322719,99.741174,Don Sak,TH840301,Don Sak,TH8403,Surat Thani,TH84
+ferry,Donsak Pier,Surat Thani,9.322719,99.741174,Don Sak,TH840301,Don Sak,TH8403,Surat Thani,TH84
+ferry,Koh Phangan,Surat Thani,9.7349503,100.030571084521,Ban Tai,TH840502,Ko Pha-Ngan,TH8405,Surat Thani,TH84
+ferry,Koh Samui,Surat Thani,9.50139445,99.9956192732,Na Mueang,TH840404,Ko Samui,TH8404,Surat Thani,TH84
+ferry,Koh Tao,Surat Thani,10.0921822,99.8395361756215,Ko Tao,TH840503,Ko Pha-Ngan,TH8405,Surat Thani,TH84
+ferry,Maenam Pier,Surat Thani,9.58179,99.98034,Maenam,TH840407,Ko Samui,TH8404,Surat Thani,TH84
+ferry,Nathon Pier,Surat Thani,9.53869,99.94548,Ang Thong,TH840401,Ko Samui,TH8404,Surat Thani,TH84
+ferry,Pha Ngan,Surat Thani,9.7349503,100.030571084521,Ban Tai,TH840502,Ko Pha-Ngan,TH8405,Surat Thani,TH84
+ferry,Raja Ferry Donsak Pier,Surat Thani,9.322719,99.741174,Don Sak,TH840301,Don Sak,TH8403,Surat Thani,TH84
+ferry,Surat Thani,Surat Thani,9.1404136,99.3241347,Talat,TH840101,Mueang Surat Thani,TH8401,Surat Thani,TH84
+ferry,Thong Sala Pier,Surat Thani,9.72891,99.99824,Ko Pha-Ngan,TH840501,Ko Pha-Ngan,TH8405,Surat Thani,TH84
+ferry,Koh Chang,Trat,12.0546168,102.337342598722,Ko Chang,TH230701,Ko Chang,TH2307,Trat,TH23
+ferry,Koh Kood,Trat,11.6621551,102.56810535674,Ko Kut,TH230602,Ko Kut,TH2306,Trat,TH23
+ferry,Koh Mak,Trat,11.81597515,102.491884755787,Ko Mak,TH230601,Ko Kut,TH2306,Trat,TH23
+ferry,Laem Sok Pier,Trat,12.07065,102.56318,Ao Yai,TH230106,Mueang Trat,TH2301,Trat,TH23
+ferry,Trat,Trat,12.2440564,102.5122822,Bang Phra,TH230101,Mueang Trat,TH2301,Trat,TH23
+ferry,Trat Airport,Trat,12.2808021,102.3236367,Tha Som,TH230304,Khao Saming,TH2303,Trat,TH23
+flight,Ayutthaya/bangpa-in,Phra Nakhon Si Ayutthaya,14.2275,100.575556,Ban Len,TH140601,Bang Pa-In,TH1406,Phra Nakhon Si Ayutthaya,TH14
+flight,Bang Phra,Chon Buri,13.2117078,100.9384747,Bang Phra,TH200707,Si Racha,TH2007,Chon Buri,TH20
+flight,Bangkok Hospital Helipad,Bangkok,13.75904,100.58437,Bang Kapi,TH101702,Huai Khwang,TH1017,Bangkok,TH10
+flight,Bangkok Sanamchan Hospital,Nakhon Pathom,13.80576,100.03913,Sanam Chan,TH730107,Mueang Nakhon Pathom,TH7301,Nakhon Pathom,TH73
+flight,Best Ocean Airpark,Samut Sakhon,13.5422811,100.3283203,Khok Kham,TH740114,Mueang Samut Sakhon,TH7401,Samut Sakhon,TH74
+flight,Betong,Yala,5.785986797,101.1474374,Yarom,TH950202,Betong,TH9502,Yala,TH95
+flight,Bitec Bang Na,Bangkok,13.66980095,100.6085427,Bang Na,TH104701,Bang Na,TH1047,Bangkok,TH10
+flight,Bueng/siracha,Chon Buri,13.166667,100.933333,Surasak,TH200702,Si Racha,TH2007,Chon Buri,TH20
+flight,Buriram,Buri Ram,14.6107101,102.6453162,Krok Kaeo,TH311703,Non Suwan,TH3117,Buri Ram,TH31
+flight,Chanthaburi,Chanthaburi,12.9081033,102.0159145,Khlong Phlu,TH221004,Khao Khitchakut,TH2210,Chanthaburi,TH22
+flight,Chiang Mai,Chiang Mai,18.7684598,98.9683195,Suthep,TH500108,Mueang Chiang Mai,TH5001,Chiang Mai,TH50
+flight,Chiang Rai,Chiang Rai,19.9480922,99.87945679,Ban Du,TH570103,Mueang Chiang Rai,TH5701,Chiang Rai,TH57
+flight,Chon Buri/pattaya,Chon Buri,12.9366924,100.8865002,Nong Prue,TH200402,Bang Lamung,TH2004,Chon Buri,TH20
+flight,Chumphon,Chumphon,10.3782724,99.0077685,Wisai Tai,TH860708,Sawi,TH8607,Chumphon,TH86
+flight,Don Mueang,Bangkok,13.91511762,100.6055468,Sanam Bin,TH103605,Don Mueang,TH1036,Bangkok,TH10
+flight,Eastern Seaboard Indtrl Estate,Rayong,13.0046985,101.1626328,Pluak Daeng,TH210601,Pluak Daeng,TH2106,Rayong,TH21
+flight,Hat Yai,Songkhla,6.92902045,100.3948145,Khlong La,TH901604,Khlong Hoi Khong,TH9016,Songkhla,TH90
+flight,Hua Hin,Prachuap Khiri Khan,12.5699326,99.9573437,Hua Hin,TH770701,Hua Hin,TH7707,Prachuap Khiri Khan,TH77
+flight,Kabinburi,Prachin Buri,14.06528015,101.8311391,Nong Ki,TH250211,Kabin Buri,TH2502,Prachin Buri,TH25
+flight,Kanchanaburi Airfield (mil),Kanchanaburi,14.12592,99.44791,Nong Bua,TH710106,Mueang Kanchanaburi,TH7101,Kanchanaburi,TH71
+flight,Khanongphra,Nakhon Ratchasima,14.63123,101.4659,Khanong Phra,TH302107,Pak Chong,TH3021,Nakhon Ratchasima,TH30
+flight,Khon Kaen,Khon Kaen,16.6022387,102.6352933,Pa Wai Nang,TH400202,Ban Fang,TH4002,Khon Kaen,TH40
+flight,Klong 11 Pathum Thani,Pathum Thani,14.0778667,100.6635274,Khlong Sam,TH130203,Khlong Luang,TH1302,Pathum Thani,TH13
+flight,Klong 16 Ongkharak Flying Club,Nakhon Nayok,14.1099,101.0017,Ongkharak,TH260409,Ongkharak,TH2604,Nakhon Nayok,TH26
+flight,Koh Mai Si,Trat,11.71663085,102.5192396,Ko Kut,TH230602,Ko Kut,TH2306,Trat,TH23
+flight,Krabi,Krabi,8.1111653,99.1097298,Phela,TH810407,Khlong Thom,TH8104,Krabi,TH81
+flight,Lampang,Lampang,18.6799728,99.7332501,Chae Hom,TH520601,Chae Hom,TH5206,Lampang,TH52
+flight,Lamphun,Lamphun,18.2661422,98.96749,Tha Mae Lop,TH510206,Mae Tha,TH5102,Lamphun,TH51
+flight,Lamphun/mae Hat Noi,Lamphun,18.2661422,98.96749,Tha Mae Lop,TH510206,Mae Tha,TH5102,Lamphun,TH51
+flight,Loei,Loei,17.44572374,101.7267075,Na An,TH420107,Mueang Loei,TH4201,Loei,TH42
+flight,Lop Buri/khok Kathiam,Lop Buri,14.8997602,100.5935071,Khok Kathiam,TH160107,Mueang Lop Buri,TH1601,Lop Buri,TH16
+flight,Lop Buri/nikom Sang Ton Eng,Lop Buri,14.8746,100.663,Khao Phra Ngam,TH160105,Mueang Lop Buri,TH1601,Lop Buri,TH16
+flight,Mae Hong Son,Mae Hong Son,19.3927456,98.2031112,Sop Pong,TH580701,Pang Mapha,TH5807,Mae Hong Son,TH58
+flight,Mae Sot,Tak,16.714992,98.5695528,Mae Sot,TH630601,Mae Sot,TH6306,Tak,TH63
+flight,Mitsumi Factory,Chon Buri,13.32368,101.13885,Ban Bueng,TH200201,Ban Bueng,TH2002,Chon Buri,TH20
+flight,Nakhon Pathom/kamphaeng  Saen,Nakhon Pathom,14.0026158,99.990904,Kamphaeng Saen,TH730212,Kamphaeng Saen,TH7302,Nakhon Pathom,TH73
+flight,Nakhon Phanom,Nakhon Phanom,17.1990989,104.6089459,Ku Ta Kai,TH480203,Pla Pak,TH4802,Nakhon Phanom,TH48
+flight,Nakhon Ratchasima,Nakhon Ratchasima,14.9747339,102.0981161,Nai Mueang,TH300101,Mueang Nakhon Ratchasima,TH3001,Nakhon Ratchasima,TH30
+flight,Nakhon Ratchasima/khorat Mil,Nakhon Ratchasima,14.9495,102.313,Nong Yang,TH303205,Chaloem Phra Kiat,TH3032,Nakhon Ratchasima,TH30
+flight,Nakhon Sawan,Nakhon Sawan,15.7054772,99.9288481,Wang Ma,TH601103,Lat Yao,TH6011,Nakhon Sawan,TH60
+flight,Nakhon Sawan (Takhli),Nakhon Sawan,15.6724852,100.1359831,Nakhon Sawan Ok,TH600107,Mueang Nakhon Sawan,TH6001,Nakhon Sawan,TH60
+flight,Nakhon Si Thammarat,Nakhon Si Thammarat,8.6772337,99.7309635,Na Reng,TH802104,Nopphitam,TH8021,Nakhon Si Thammarat,TH80
+flight,Nan,Nan,18.80268844,100.7850788,Nai Wiang,TH550101,Mueang Nan,TH5501,Nan,TH55
+flight,Narathiwat,Narathiwat,6.3210758,101.5972971,La Lo,TH960606,Rueso,TH9606,Narathiwat,TH96
+flight,Peninsula Hotel Helipad,Bangkok,13.72302,100.51091,Khlong Ton Sai,TH101804,Khlong San,TH1018,Bangkok,TH10
+flight,Phetchabun,Phetchabun,16.3293171,100.9552749,Sap Poep,TH671003,Wang Pong,TH6710,Phetchabun,TH67
+flight,Phitsanulok,Phitsanulok,16.9779975,100.3848239,Tha Ngam,TH650702,Wat Bot,TH6507,Phitsanulok,TH65
+flight,Phra Nakhon Si Ayutthaya/uthai,Phra Nakhon Si Ayutthaya,14.3189468,100.5111681,Pak Kran,TH140107,Phra Nakhon Si Ayutthaya,TH1401,Phra Nakhon Si Ayutthaya,TH14
+flight,Phrae,Phrae,18.2930601,100.0886757,Wang Luang,TH540804,Nong Muang Khai,TH5408,Phrae,TH54
+flight,Phuket,Phuket,8.11013195,98.30581528,Mai Khao,TH830305,Thalang,TH8303,Phuket,TH83
+flight,Phuket Airpark,Phuket,8.0180294,98.4039277,Pa Khlok,TH830304,Thalang,TH8303,Phuket,TH83
+flight,Prachin Buri/watthana Nakhon,Sa Kaeo,13.76879978,102.3150024,Watthana Nakhon,TH270501,Watthana Nakhon,TH2705,Sa Kaeo,TH27
+flight,Prachuap Khiri Khan,Prachuap Khiri Khan,12.0432669,99.7487235,Kui Buri,TH770201,Kui Buri,TH7702,Prachuap Khiri Khan,TH77
+flight,Ranong,Ranong,10.0469546,98.6870133,Bang Phra Nuea,TH850204,La-Un,TH8502,Ranong,TH85
+flight,Ratchaburi/photharam,Ratchaburi,13.6942931,99.8499281,Photharam,TH700701,Photharam,TH7007,Ratchaburi,TH70
+flight,Roi Et,Roi Et,16.1164,103.7013017,Mu Mon,TH451805,Chiang Khwan,TH4518,Roi Et,TH45
+flight,Sakon Nakhon,Sakon Nakhon,17.4071799,103.6494605,Muang Khai,TH470502,Phang Khon,TH4705,Sakon Nakhon,TH47
+flight,Samui,Surat Thani,9.548489392,100.0630664,Bo Phut,TH840406,Ko Samui,TH8404,Surat Thani,TH84
+flight,San Kamphaeng,Chiang Mai,18.7450907,99.1195292,San Kamphaeng,TH501301,San Kamphaeng,TH5013,Chiang Mai,TH50
+flight,Skydive Thailand Dropzone,Nakhon Ratchasima,14.63054784,101.473505,Khanong Phra,TH302107,Pak Chong,TH3021,Nakhon Ratchasima,TH30
+flight,Songkhla,Songkhla,7.187131027,100.6064991,Bo Yang,TH900101,Mueang Songkhla,TH9001,Songkhla,TH90
+flight,Sukhothai,Sukhothai,17.1446985,99.4375845,Taling Chan,TH640205,Ban Dan Lan Hoi,TH6402,Sukhothai,TH64
+flight,Surat Thani,Surat Thani,9.4674663,98.830042,Pak Chalui,TH841106,Tha Chang,TH8411,Surat Thani,TH84
+flight,Surin,Surin,14.87164006,103.4972948,Nok Mueang,TH320111,Mueang Surin,TH3201,Surin,TH32
+flight,Suvarnabhumi,Samut Prakan,13.6942671,100.7512883,Nong Prue,TH110309,Bang Phli,TH1103,Samut Prakan,TH11
+flight,Toscana Valley/khaoyai,Nakhon Ratchasima,14.51847263,101.5081376,Pong Ta Long,TH302108,Pak Chong,TH3021,Nakhon Ratchasima,TH30
+flight,Trang,Trang,7.5892935,99.5032004,Nong Trut,TH920114,Mueang Trang,TH9201,Trang,TH92
+flight,Trat,Trat,12.2593544,102.4268871,Nong Sano,TH230103,Mueang Trat,TH2301,Trat,TH23
+flight,Trat/khao Saming,Trat,12.3555139,102.4377915,Khao Saming,TH230301,Khao Saming,TH2303,Trat,TH23
+flight,U-tapao,Rayong,12.6799,101.005,Phla,TH210202,Ban Chang,TH2102,Rayong,TH21
+flight,Ubon Ratchathani,Ubon Ratchathani,15.24685075,104.870712,Nai Mueang,TH340101,Mueang Ubon Ratchathani,TH3401,Ubon Ratchathani,TH34
+flight,Udon Thani,Udon Thani,17.5211917,102.6680012,Chiang Pheng,TH410204,Kut Chap,TH4102,Udon Thani,TH41
